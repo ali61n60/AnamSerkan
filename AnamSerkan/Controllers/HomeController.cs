@@ -23,5 +23,11 @@ namespace AnamSerkan.Controllers
         {
             return View();
         }
+        public IActionResult Products()
+        {
+            return View();
+        }
+
+        
     }
 }
