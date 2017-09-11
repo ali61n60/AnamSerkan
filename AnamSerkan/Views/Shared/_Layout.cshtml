@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebApplication1</title>
+
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
 </head>
@@ -19,7 +20,7 @@
             </button>
             <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">آنام سرکان</a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse bg-info">
             <ul class="nav navbar-nav">
                 <li><a asp-area="" asp-controller="Home" asp-action="Index">خانه</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="About">درباره ما</a></li>
@@ -33,9 +34,12 @@
 <div class="container body-content">
     @RenderBody()
     
-    <hr />
+    
+    
+</div>
+<div class="panel-footer">
     <footer>
-        <p>&copy; 2016 - WebApplication1</p>
+        <p>&copy; 2016 - anamserkan</p>
     </footer>
 </div>
 
