@@ -2,13 +2,8 @@
     margin-bottom: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    background-color: #9370DB;
-    
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color:  greenyellow;
-} 
 
 .row.content {
     height: 450px
@@ -17,13 +12,13 @@
 
 .sidenav {
     padding-top: 20px;
-    background-color: #EE82EE;
+    background-color: #f1f1f1;
     height: 100%;
 }
 
 
 footer {
-    background-color: #DDA0DD;
+    background-color: #555;
     color: white;
     padding: 15px;
 }
