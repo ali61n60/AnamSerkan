@@ -24,11 +24,19 @@
         <link href="~/css/site.min.css" rel="stylesheet" />
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    
+
 
     <title>@ViewData["Title"]</title>
 </head>
 <body>
+    <div class="row">
+        <div class="col-sm-8">
+            <div>
+                <span class="glyphicon glyphicon-earphone"></span><span>021-44035763</span>
+                <span class="glyphicon glyphicon-envelope"></span><span>info@anamserkan.ir</span>
+            </div>
+        </div>
+    </div>
 
     <nav class="navbar navbar-inverse">
         <div class="container">
@@ -40,7 +48,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">آنام سرکان</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                    <img  style="max-width:100px; margin-top: -7px;" src="~/Resources/Images/logo.jpg" />
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -49,38 +59,73 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">تماس با ما</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Products">محصولات</a></li>
                 </ul>
-
             </div>
         </div>
     </nav>
-<div class="container-fluid text-center">
-    <div class="row content">
-        <div class="col-sm-2 sidenav">
-            <p><a asp-area="" asp-controller="Home" asp-action="Index">خانه</a>
-            </p>
-            <p><a asp-area="" asp-controller="Home" asp-action="About">درباره ما</a>
-            </p>
-            <p><a asp-area="" asp-controller="Home" asp-action="Contact">تماس با ما</a>
-            </p>
-            <p><a asp-area="" asp-controller="Home" asp-action="Products">محصولات</a>
-            </p>
-        </div>
-        <div class="col-sm-8 text-left">
-            @RenderBody()
-        </div>
-        <div class="col-sm-2 sidenav">
-            <div class="well">
-                <p>ADS</p>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">خانه</a>
+                </p>
+                <p>
+                    <a asp-area="" asp-controller="Home" asp-action="About">درباره ما</a>
+                </p>
+                <p>
+                    <a asp-area="" asp-controller="Home" asp-action="Contact">تماس با ما</a>
+                </p>
+                <p>
+                    <a asp-area="" asp-controller="Home" asp-action="Products">محصولات</a>
+                </p>
             </div>
-            <div class="well">
-                <p>ADS</p>
+            <div class="col-sm-8 text-left">
+                @RenderBody()
+            </div>
+            <div class="col-sm-2 sidenav">
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<footer class="container-fluid text-center">
-    <p>&copy; 2016 - anamserkan</p>
-</footer>
-@RenderSection("scripts", required: false)
+    <footer class="container-fluid text-center">
+        <div id="footer-middle" style="direction: rtl">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>با ما در تماس باشید</h3>
+                    <ul>
+                        <li><i></i>تهران، فلکه دوم صادقیه</li> 
+                        <li>بلوار اشرفی اصفهانی</li> 
+                        <li>نرسیده به مرزداران برج نگین رضا</li> 
+                        <li><span class="glyphicon glyphicon-earphone"></span><i></i>02144035763</li>
+                        <li><span class="glyphicon glyphicon-earphone"></span><i></i>02144035740</li>
+                        <li><span class="glyphicon glyphicon-earphone"></span><i></i>02144035772</li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div >
+                        <h3 >درباره ما</h3>
+                        <div >
+                            <p style="text-align: justify;">شرکت آنام سرکان با در اختیار داشتن کادری مجرب مدیران و کارشناسان متخصص در زمینه انواع ماشین آلات راهسازی ،معدنی ،کشاورزی و صنعتی با بیش از 15 سال سابقه کار و دارا بودن&nbsp; دفتر مرکزی در اشرفی اصفهانی و انباری به مساحت 1000 متر دارای 500متر سوله واقع در شهرک صنعتی شورآباد آماده ارائه خدمات در زمینه مشاوره و تامین انواع روانکارهای صنعتی، روغن موتور و انواع گریس، فیلتر ،لاستیک و قطعات مصرفی ماشین آلات راهسازی، کشاورزی و معدنی&nbsp; میباشد.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    &copy; 2017 - anamserkan
+                </div>
+            </div>
+        </div>
+    </footer>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

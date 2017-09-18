@@ -2,7 +2,7 @@
     margin-bottom: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    background-color: #9370DB;
+    background-color: #8a2be2;
     
 }
 
@@ -17,13 +17,13 @@
 
 .sidenav {
     padding-top: 20px;
-    background-color: #EE82EE;
+    background-color: #d8bfd8;
     height: 100%;
 }
 
 
 footer {
-    background-color: #DDA0DD;
+    background-color: #9370db;
     color: white;
     padding: 15px;
 }
