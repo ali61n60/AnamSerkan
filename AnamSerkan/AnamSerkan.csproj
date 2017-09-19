@@ -5,13 +5,40 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot/Resources\pdf\behran.doc" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\css\styleForOriginalTemplate.css" />
     <Content Include="wwwroot\js\site.js" />
+    <Content Include="wwwroot\Resources\Images\behranOil.png" />
+    <Content Include="wwwroot\Resources\Images\iranOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\behranOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\bpOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\castrolOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\elfOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\fuchsOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\iranOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\liquiMolyOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\mobilOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\parsOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\sepahanOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\shellOil.png" />
+    <Content Include="wwwroot\Resources\Images\Products\Oil\totalOil.png" />
+    <Content Include="wwwroot\Resources\Pdf\Products\Oil\behranOil.pdf" />
+    <Content Include="wwwroot\Resources\Pdf\Products\Oil\castrolOil.pdf" />
+    <Content Include="wwwroot\Resources\Pdf\Products\Oil\elf.pdf" />
+    <Content Include="wwwroot\Resources\Pdf\Products\Oil\iranOil.pdf" />
+    <Content Include="wwwroot\Resources\Pdf\Products\Oil\mobilOil.pdf" />
+    <Content Include="wwwroot\Resources\Pdf\Products\Oil\parsOil.pdf" />
+    <Content Include="wwwroot\Resources\Pdf\Products\Oil\sepahanOil.pdf" />
+    <Content Include="wwwroot\Resources\Pdf\Products\Oil\shellOil.pdf" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="wwwroot\Resources\Images\Products\Tire\" />
   </ItemGroup>
 
   <ItemGroup>
