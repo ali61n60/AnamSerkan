@@ -11,14 +11,15 @@
 }
 
 .content {
-    
+    height: 100%;
 }
 
 
 .sidenav {
     padding-top: 20px;
     background-color: #d8bfd8;
-    
+    height: 100%;
+
 }
 
 
