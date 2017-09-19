@@ -12,8 +12,6 @@
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\css\styleForOriginalTemplate.css" />
     <Content Include="wwwroot\js\site.js" />
-    <Content Include="wwwroot\Resources\Images\behranOil.png" />
-    <Content Include="wwwroot\Resources\Images\iranOil.png" />
     <Content Include="wwwroot\Resources\Images\Products\Oil\behranOil.png" />
     <Content Include="wwwroot\Resources\Images\Products\Oil\bpOil.png" />
     <Content Include="wwwroot\Resources\Images\Products\Oil\castrolOil.png" />

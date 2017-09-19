@@ -8,17 +8,17 @@
 
 .navbar-inverse .navbar-nav > li > a {
     color:  greenyellow;
-} 
+}
 
-.row.content {
-    height: 450px
+.content {
+    
 }
 
 
 .sidenav {
     padding-top: 20px;
     background-color: #d8bfd8;
-    height: 100%;
+    
 }
 
 
@@ -38,13 +38,3 @@ img.myImage {
 }
 
 
-@media screen and (max-width: 767px) {
-    .sidenav {
-        height: auto;
-        padding: 15px;
-    }
-
-    .row.content {
-        height: auto;
-    }
-}
