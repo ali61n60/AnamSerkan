@@ -1,5 +1,6 @@
 ﻿/*currentProject.scss*/
 @import '../helpers/_variables.scss';
+
 .top-header {
     background-color: $topHeadlineBackgroundColor;
     color: #bbb;
@@ -24,17 +25,32 @@
     color: greenyellow;
 }
 
-.content {
-    height: 100%;
-}
 
+.content {   
+    background-color:aqua;
+    &::before {
+        position: absolute;
+        content: "";        
+    }
+
+    &::after {
+        position: absolute;
+        content: "";      
+    }
+}
 
 .sidenav {
     padding-top: 20px;
     background-color: $sidebarBackgroundColor;
-    min-height: 100%;
+
+    z-index: 1;
+    box-sizing: border-box;
 }
 
+.main {    
+    z-index: 1;    
+    box-sizing: border-box;
+}
 
 footer {
     background-color: $footerBackgroundColor;
@@ -51,6 +67,6 @@ img.myImage {
     width: 87px;
 }
 
-.productComponent{
-    margin:5px 0 5px 0;
+.productComponent {
+    margin: 5px 0 5px 0;
 }

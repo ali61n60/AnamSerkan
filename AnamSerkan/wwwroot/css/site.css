@@ -265,12 +265,23 @@ th {
   color: greenyellow; }
 
 .content {
-  height: 100%; }
+  background-color: aqua; }
+  .content::before {
+    position: absolute;
+    content: ""; }
+  .content::after {
+    position: absolute;
+    content: ""; }
 
 .sidenav {
   padding-top: 20px;
   background-color: #d8bfd8;
-  min-height: 100%; }
+  z-index: 1;
+  box-sizing: border-box; }
+
+.main {
+  z-index: 1;
+  box-sizing: border-box; }
 
 footer {
   background-color: #9370db;

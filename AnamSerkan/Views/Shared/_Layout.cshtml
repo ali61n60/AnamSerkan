@@ -24,7 +24,7 @@
         <link href="~/css/site.min.css" rel="stylesheet" />
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+   
 
     <title>@ViewData["Title"]</title>
 </head>
@@ -70,8 +70,8 @@
             </div>
         </div>
         <br />
-        <div class="row content">
-            <div class="col-sm-2 hidden-xs sidenav">
+        <div class="row content" >
+            <div class="col-sm-2 sidenav">
                 <p>
                     <a asp-area="" asp-controller="Home" asp-action="Index">خانه</a>
                 </p>
@@ -85,7 +85,7 @@
                     <a asp-area="" asp-controller="Home" asp-action="Products">محصولات</a>
                 </p>
             </div>
-            <div class="col-sm-10 col-xs-12">
+            <div class="col-sm-10 col-xs-12 main">
                 @RenderBody()
             </div>
         </div>
