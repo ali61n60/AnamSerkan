@@ -1,4 +1,4 @@
-﻿
+﻿/*_variables.scss*/
 /*Colors*/
 $defaultColor:#333;
 $defaultBackgroundColor:#fff;
@@ -37,6 +37,9 @@ $dangerFocusBackgroundColor:#c9302c;
 $dangerFocusBorderColor:#761c19;
 $dangerHoverBorderColor:#ac2925;
 
+$darkPurple: #8a2be2;
+$midPurple: #9370db ;
+$softPurple: #d8bfd8;
 
 $logo_color : #083B91;
 
@@ -49,6 +52,10 @@ $secondary-light: #FDC149;
 /* functional variables */
 $page-background: $primary-light;
 $headline-color: $primary-dark;
+$topHeadlineBackgroundColor:$primary-dark;
+$headlineBackgroundColor:$darkPurple; 
+$sidebarBackgroundColor:$softPurple;
+$footerBackgroundColor: $midPurple;
 $text-color: $primary-dark;
 $border-light: $secondary-light;
 $border-dark: $primary-dark;

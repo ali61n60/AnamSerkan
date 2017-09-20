@@ -1,5 +1,7 @@
-﻿.top-header {
-    background-color: #022b36;
+﻿/*currentProject.scss*/
+@import '../helpers/_variables.scss';
+.top-header {
+    background-color: $topHeadlineBackgroundColor;
     color: #bbb;
     padding: 7px 0 7px 0;
     font-size: 20px;
@@ -15,7 +17,7 @@
     margin-bottom: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    background-color: #8a2be2;
+    background-color: $headlineBackgroundColor;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -29,13 +31,13 @@
 
 .sidenav {
     padding-top: 20px;
-    background-color: #d8bfd8;
+    background-color: $sidebarBackgroundColor;
     min-height: 100%;
 }
 
 
 footer {
-    background-color: #9370db;
+    background-color: $footerBackgroundColor;
     color: white;
     padding: 15px;
 }
@@ -47,4 +49,8 @@ footer {
 
 img.myImage {
     width: 87px;
+}
+
+.productComponent{
+    margin:5px 0 5px 0;
 }
