@@ -56,7 +56,6 @@
         $(document).ready(function () {
             $(window).resize(function () {
                 setHieghtSize();
-                $(".test").text($(window).outerWidth());
             });//end resize
             
             setHieghtSize();
@@ -102,9 +101,12 @@
     </nav>
     <div class="container-fluid">
         <div class="row page-title">
-            <div class="col-sm-3 col-sm-push-9 test">
+            <div class="col-sm-3 col-sm-push-9">
                 <h1>@ViewData["PageTitle"]</h1>
             </div>
+        </div>
+        <div class="row">
+            @RenderSection("topHeader",required:false)
         </div>
         <br />
         <div class="row middle" >

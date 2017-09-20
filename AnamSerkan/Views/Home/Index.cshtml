@@ -4,6 +4,16 @@
     ViewBag.Title = "home";
     Layout = "_Layout";
 }
+@section topHeader
+{<div>
+    <ul class="bxslider">
+        <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/behranOil.png" /></li>
+        <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/bpOil.png" /></li>
+        <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/castrolOil.png" /></li>
+        <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/elfOil.png" /></li>
+    </ul>
+</div>
+}
 
 <h2>Home AgainFirst</h2>
 <h2>Home</h2>
@@ -11,4 +21,16 @@
 <p1>@ViewBag.Title</p1>
 <p>This was</p>
 
+@section scripts{
+    <!-- bxSlider Javascript file -->
+    <script src="~/lib/bxslider-4/src/js/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="~/lib/bxslider-4/dist/jquery.bxslider.min.css" rel="stylesheet" />
 
+    <script>
+        $(document).ready(function () {
+            var slider = $('.bxslider').bxSlider();
+            slider.startAuto();
+        });
+    </script>
+}
