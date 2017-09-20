@@ -19,7 +19,7 @@
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -264,24 +264,9 @@ th {
 .navbar-inverse .navbar-nav > li > a {
   color: greenyellow; }
 
-.content {
-  background-color: aqua; }
-  .content::before {
-    position: absolute;
-    content: ""; }
-  .content::after {
-    position: absolute;
-    content: ""; }
-
 .sidenav {
   padding-top: 20px;
-  background-color: #d8bfd8;
-  z-index: 1;
-  box-sizing: border-box; }
-
-.main {
-  z-index: 1;
-  box-sizing: border-box; }
+  background-color: #d8bfd8; }
 
 footer {
   background-color: #9370db;

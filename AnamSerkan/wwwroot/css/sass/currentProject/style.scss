@@ -26,30 +26,16 @@
 }
 
 
-.content {   
-    background-color:aqua;
-    &::before {
-        position: absolute;
-        content: "";        
-    }
-
-    &::after {
-        position: absolute;
-        content: "";      
-    }
+.middle {
 }
+
 
 .sidenav {
     padding-top: 20px;
     background-color: $sidebarBackgroundColor;
-
-    z-index: 1;
-    box-sizing: border-box;
 }
 
-.main {    
-    z-index: 1;    
-    box-sizing: border-box;
+.main {
 }
 
 footer {

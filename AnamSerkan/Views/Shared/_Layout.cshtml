@@ -24,7 +24,44 @@
         <link href="~/css/site.min.css" rel="stylesheet" />
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
-   
+    <script>
+        function makeHeightAuto(el) {
+            $(el).each(function() {
+                $(this).css({ 'height': 'auto' });
+            });
+        }
+        function equal_cols(el)
+        {
+            var h = 0;
+            $(el).each(function(){
+                $(this).css({'height':'auto'});
+                if($(this).outerHeight() > h)
+                {
+                    h = $(this).outerHeight();
+                }
+            });
+            $(el).each(function(){
+                $(this).css({'height':h});
+            });
+        }
+
+        function setHieghtSize() {
+            if ($(window).outerWidth() >= 768) {
+                equal_cols('.sameHeight');
+            } //end if
+            else {
+                makeHeightAuto('.sameHeight');
+            }//end else
+        }
+        $(document).ready(function () {
+            $(window).resize(function () {
+                setHieghtSize();
+                $(".test").text($(window).outerWidth());
+            });//end resize
+            
+            setHieghtSize();
+        });
+    </script>
 
     <title>@ViewData["Title"]</title>
 </head>
@@ -65,13 +102,13 @@
     </nav>
     <div class="container-fluid">
         <div class="row page-title">
-            <div class="col-sm-3 col-sm-push-9">
+            <div class="col-sm-3 col-sm-push-9 test">
                 <h1>@ViewData["PageTitle"]</h1>
             </div>
         </div>
         <br />
-        <div class="row content" >
-            <div class="col-sm-2 sidenav">
+        <div class="row middle" >
+            <div class="col-sm-2 sidenav sameHeight">
                 <p>
                     <a asp-area="" asp-controller="Home" asp-action="Index">خانه</a>
                 </p>
@@ -85,7 +122,7 @@
                     <a asp-area="" asp-controller="Home" asp-action="Products">محصولات</a>
                 </p>
             </div>
-            <div class="col-sm-10 col-xs-12 main">
+            <div class="col-sm-10 col-xs-12 main sameHeight">
                 @RenderBody()
             </div>
         </div>
