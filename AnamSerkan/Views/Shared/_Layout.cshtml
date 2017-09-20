@@ -70,7 +70,7 @@
     </div>
     <br/>
     <div class="row content">
-        <div class="col-sm-2 hidden-xs sidenav">
+        <div class="col-sm-2 hidden-xs sidebar">
             <p>
                 <a asp-area="" asp-controller="Home" asp-action="Index">خانه</a>
             </p>
@@ -84,10 +84,10 @@
                 <a asp-area="" asp-controller="Home" asp-action="Products">محصولات</a>
             </p>
         </div>
-        <div class="col-sm-8 col-xs-12">
+        <div class="col-sm-8 col-xs-12 main-container">
             @RenderBody()
         </div>
-        <div class="col-sm-2 col-xs-12 sidenav">
+        <div class="col-sm-2 col-xs-12 sidebar">
             <div class="well">
                 <p>ADS</p>
             </div>
