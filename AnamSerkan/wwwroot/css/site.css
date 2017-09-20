@@ -1,52 +1,40 @@
-﻿.top-header {
-    background-color: #022b36;
-    color: #bbb;
-    padding: 7px 0 7px 0;
-    font-size: 20px;
-}
+/*sass --watch site.scss:../site.css*/
+.top-header {
+  background-color: #022b36;
+  color: #bbb;
+  padding: 7px 0 7px 0;
+  font-size: 20px; }
 
 @media screen and (max-width: 767px) {
-.top-header {
-    font-size: 12px;
-}
-}
+  .top-header {
+    font-size: 12px; } }
+.navbar {
+  margin-bottom: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background-color: #8a2be2; }
 
-    .navbar {
-        margin-bottom: 0;
-        -ms-border-radius: 0;
-        border-radius: 0;
-        background-color: #8a2be2;
-    }
+.navbar-inverse .navbar-nav > li > a {
+  color: greenyellow; }
 
-    .navbar-inverse .navbar-nav > li > a {
-        color: greenyellow;
-    }
+.content {
+  height: 100%; }
 
-    .content {
-        height: 100%;
-    }
+.sidenav {
+  padding-top: 20px;
+  background-color: #d8bfd8;
+  min-height: 100%; }
 
+footer {
+  background-color: #9370db;
+  color: white;
+  padding: 15px; }
 
-    .sidenav {
-        padding-top: 20px;
-        background-color: #d8bfd8;
-        min-height: 100%;
-    }
+.page-title {
+  background-color: #d8bfd8;
+  height: 100px; }
 
+img.myImage {
+  width: 87px; }
 
-    footer {
-        background-color: #9370db;
-        color: white;
-        padding: 15px;
-    }
-
-    .page-title {
-        background-color: #d8bfd8;
-        height: 100px;
-    }
-
-    img.myImage {
-        width: 87px;
-    }
-
-
+/*# sourceMappingURL=site.css.map */

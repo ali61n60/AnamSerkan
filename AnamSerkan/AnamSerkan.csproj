@@ -5,11 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot/css\sass\cmd.exe" />
     <Content Remove="wwwroot/Resources\pdf\behran.doc" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\css\sass\site.css" />
+    <Content Include="wwwroot\css\sass\site.min.css" />
+    <Content Include="wwwroot\css\sass\site.scss" />
+    <Content Include="wwwroot\css\site.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\css\site.scss" />
     <Content Include="wwwroot\css\styleForOriginalTemplate.css" />
     <Content Include="wwwroot\js\site.js" />
     <Content Include="wwwroot\Resources\Images\Products\Oil\behranOil.png" />
