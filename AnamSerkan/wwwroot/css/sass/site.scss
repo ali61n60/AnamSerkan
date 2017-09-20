@@ -1,0 +1,7 @@
+﻿/*sass --watch site.scss:../site.css*/
+@import "helpers/_variables";
+@import "helpers/_mixins";
+@import "base/_reset.scss";
+@import "base/_normalize.scss";
+
+@import "currentProject/style.scss";
