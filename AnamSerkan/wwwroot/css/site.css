@@ -1,40 +1,55 @@
-/*sass --watch site.scss:../site.css*/
-.top-header {
-  background-color: #022b36;
-  color: #bbb;
-  padding: 7px 0 7px 0;
-  font-size: 20px; }
+/*
+Error: File to import not found or unreadable: sass/currentProject/style.scss.
+        on line 5 of site.scss
 
-@media screen and (max-width: 767px) {
-  .top-header {
-    font-size: 12px; } }
-.navbar {
-  margin-bottom: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  background-color: #8a2be2; }
+1: /*sass --watch site.scss:../site.css*\/
+2: @import 'helpers/variables';
+3: @import 'helpers/mixins';
+4: 
+5: @import "sass/currentProject/style.scss";
 
-.navbar-inverse .navbar-nav > li > a {
-  color: greenyellow; }
-
-.content {
-  height: 100%; }
-
-.sidenav {
-  padding-top: 20px;
-  background-color: #d8bfd8;
-  min-height: 100%; }
-
-footer {
-  background-color: #9370db;
-  color: white;
-  padding: 15px; }
-
-.page-title {
-  background-color: #d8bfd8;
-  height: 100px; }
-
-img.myImage {
-  width: 87px; }
-
-/*# sourceMappingURL=site.css.map */
+Backtrace:
+site.scss:5
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: sass/currentProject/style.scss.\A         on line 5 of site.scss\A \A 1: /*sass --watch site.scss:../site.css*/\A 2: @import 'helpers/variables';\A 3: @import 'helpers/mixins';\A 4: \A 5: @import \"sass/currentProject/style.scss\";"; }
