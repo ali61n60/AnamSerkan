@@ -14,10 +14,9 @@
     <Content Include="wwwroot\css\sass\site.css" />
     <Content Include="wwwroot\css\sass\site.min.css" />
     <Content Include="wwwroot\css\sass\site.scss" />
-    <Content Include="wwwroot\css\site.css">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="wwwroot\css\site.scss" />
+    <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\css\site.css.map" />
+    <Content Include="wwwroot\css\site.min.css" />
     <Content Include="wwwroot\css\styleForOriginalTemplate.css" />
     <Content Include="wwwroot\js\site.js" />
     <Content Include="wwwroot\Resources\Images\Products\Oil\behranOil.png" />
