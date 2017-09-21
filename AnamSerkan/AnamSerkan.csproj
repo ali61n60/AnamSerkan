@@ -47,6 +47,7 @@
     <Folder Include="wwwroot\css\sass\helpers\" />
     <Folder Include="wwwroot\css\sass\base\" />
     <Folder Include="wwwroot\Resources\Images\Products\Tire\" />
+    <Folder Include="wwwroot\Resources\Pdf\Equivalent\" />
   </ItemGroup>
 
   <ItemGroup>
