@@ -28,6 +28,11 @@ namespace AnamSerkan.Controllers
             return View();
         }
 
+        public IActionResult Equivalent()
+        {
+            return View();
+        }
+
         
     }
 }
