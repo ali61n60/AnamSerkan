@@ -49,12 +49,18 @@ footer {
     height: 100px;
 }
 
-img.myImage {
-    width: 87px;
-}
+
 
 .productComponent {
-    margin: 5px 0 5px 0;
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px $darkPurple;
+    height: 150px;
+    text-align:center;
+    img {
+        width: 90px;    
+        height:90px
+    }
 }
 
 .top-header-img{

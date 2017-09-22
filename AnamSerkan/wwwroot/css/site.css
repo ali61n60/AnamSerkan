@@ -277,11 +277,15 @@ footer {
   background-color: #d8bfd8;
   height: 100px; }
 
-img.myImage {
-  width: 87px; }
-
 .productComponent {
-  margin: 5px 0 5px 0; }
+  margin: 5px;
+  padding: 5px;
+  border: solid 1px #8a2be2;
+  height: 150px;
+  text-align: center; }
+  .productComponent img {
+    width: 90px;
+    height: 90px; }
 
 .top-header-img {
   width: 200px;
