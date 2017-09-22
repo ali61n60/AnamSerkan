@@ -4,15 +4,36 @@
     ViewBag.Title = "home";
     Layout = "_Layout";
 }
-@section topHeader
-{<div>
-    <ul class="bxslider">
-        <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/behranOil.png" /></li>
-        <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/bpOil.png" /></li>
-        <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/castrolOil.png" /></li>
-        <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/elfOil.png" /></li>
-    </ul>
-</div>
+
+@section TopTop
+{
+    @Html.Partial("TopTop");
+}
+@section NavBar
+{
+    @Html.Partial("NavBar")
+}
+@section PageTitle
+{
+
+}
+@section TopHeader
+{
+    <div class="row">
+        <div>
+            <ul class="bxslider">
+                <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/behranOil.png" /></li>
+                <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/bpOil.png" /></li>
+                <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/castrolOil.png" /></li>
+                <li><img class="top-header-img" src="~/Resources/Images/Products/Oil/elfOil.png" /></li>
+            </ul>
+        </div>
+    </div>
+    <br/>
+}
+@section SideNav
+{
+    @Html.Partial("SideNav")
 }
 
 <h2>Home AgainFirst</h2>

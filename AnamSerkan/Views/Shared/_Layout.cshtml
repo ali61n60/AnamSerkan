@@ -27,110 +27,65 @@
     <title>@ViewData["Title"]</title>
 </head>
 <body>
-    <div class="row top-header">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-            <span class="glyphicon glyphicon-earphone"></span>&nbsp;021-44034117
-            &nbsp;&nbsp;&nbsp;
-            <span class="glyphicon glyphicon-envelope"></span>&nbsp;info@anamserkan.ir
+    @RenderSection("TopTop", required: false)
+    @RenderSection("NavBar", required: false)
+<div class="container-fluid">
+    @RenderSection("PageTitle", required: false)
+    @RenderSection("TopHeader", required: false)
+   
+    <div class="row middle">
+        <div class="col-sm-2 sidenav">
+            @RenderSection("SideNav", required: false);
         </div>
-        <div class="col-sm-2"></div>
+        <div class="col-sm-10 col-xs-12 main">
+            @RenderBody()
+        </div>
     </div>
+</div>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
-                    <img style="max-width:100px; margin-top: -7px;" src="~/Resources/Images/logo.jpg" />
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">خانه</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">درباره ما</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">تماس با ما</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Products">محصولات</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Equivalent">معادل یابی روغن</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="row page-title">
-            <div class="col-sm-3 col-sm-push-9">
-                <h1>@ViewData["PageTitle"]</h1>
-            </div>
-        </div>
-        <div class="row">
-            @RenderSection("topHeader", required: false)
-        </div>
-        <br />
-        <div class="row middle">
-            <div class="col-sm-2 sidenav">
-                <p>
-                    <a asp-area="" asp-controller="Home" asp-action="Index">خانه</a>
-                </p>
-                <p>
-                    <a asp-area="" asp-controller="Home" asp-action="About">درباره ما</a>
-                </p>
-                <p>
-                    <a asp-area="" asp-controller="Home" asp-action="Contact">تماس با ما</a>
-                </p>
-                <p>
-                    <a asp-area="" asp-controller="Home" asp-action="Products">محصولات</a>
-                </p>
-                <p>
-                    <a asp-area="" asp-controller="Home" asp-action="Equivalent">معادل یابی روغن</a>
-                </p>
-            </div>
-            <div class="col-sm-10 col-xs-12 main">
-                @RenderBody()
-            </div>
-        </div>
-    </div>
-    <footer class="container-fluid text-center">
-        <div id="footer-middle" style="direction: rtl">
-            <div class="row">
-                <div class="col-sm-6 col-sm-push-6">
-                    <div>
-                        <h3>درباره ما</h3>
+    @if (IsSectionDefined("Footer"))
+    {
+        @RenderSection("Footer")
+    }
+    else
+    {
+        <footer class="container-fluid text-center">
+            <div id="footer-middle" style="direction: rtl">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-6">
                         <div>
-                            <p>
-                                <bdi>
-                                    شرکت آنام سرکان با بیش از 25 سال سابقه در زمینه تامین انواع روانسازهای صنعتی، موتوری و کشاورزی و همچنین داشتن کادر مشاوره و فروش مجرب افتخار دارد در خدمت صنعت کشور بوده و در این مدت با شرکتهای راه سازی و عمرانی کشور همکاری داشته است. لذا این شرکت آمادگی خود را در جهت تامین انواع روانسازهای صنعتی و موتوری و کشاورزی و ماشین آلات راه سازی اعلام می دارد.
-                                </bdi>
-                            </p>
-                            <p></p>
+                            <h3>درباره ما</h3>
+                            <div>
+                                <p>
+                                    <bdi>
+                                        شرکت آنام سرکان با بیش از 25 سال سابقه در زمینه تامین انواع روانسازهای صنعتی، موتوری و کشاورزی و همچنین داشتن کادر مشاوره و فروش مجرب افتخار دارد در خدمت صنعت کشور بوده و در این مدت با شرکتهای راه سازی و عمرانی کشور همکاری داشته است. لذا این شرکت آمادگی خود را در جهت تامین انواع روانسازهای صنعتی و موتوری و کشاورزی و ماشین آلات راه سازی اعلام می دارد.
+                                    </bdi>
+                                </p>
+                                <p></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-sm-pull-6">
-                    <h3>آدرس</h3>
-                    تهران، فلکه دوم صادقیه، بلوار اشرفی اصفهانی، نرسیده به بلوار مرزداران، برج نگین رضا
-                    <br/>
-                    <span class="glyphicon glyphicon-earphone"></span>021-44034117
-                    <span class="glyphicon glyphicon-earphone"></span>021-44034116
-                </div>
-
-                
-            </div>
-        </div>
-        <div id="footer-bottom">
-
-            <div class="row">
-                <div class="col-xs-12">
-                    &copy; 2017 - anamserkan
+                    <div class="col-sm-6 col-sm-pull-6">
+                        <h3>آدرس</h3>
+                        تهران، فلکه دوم صادقیه، بلوار اشرفی اصفهانی، نرسیده به بلوار مرزداران، برج نگین رضا
+                        <br />
+                        <span class="glyphicon glyphicon-earphone"></span>021-44034117
+                        <span class="glyphicon glyphicon-earphone"></span>021-44034116
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div id="footer-bottom">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        &copy; 2017 - anamserkan
+                    </div>
+                </div>
+            </div>
+        </footer>
+    }
+
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
