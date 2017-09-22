@@ -21,939 +21,952 @@
 {
     @Html.Partial("SideNav")
 }
-
-<div class="row">
-    <div class="col-sm-6"></div>
-    <div class="col-sm-6">
-        <div class="panel panel-primary">
-            <div class="panel-heading text-right text-size-lg">
-                <bdi>دانلود فایل معادل یابی</bdi>
-            </div>
-            <div class="panel-body text-right">
-                <a href="~/Resources/Pdf/Equivalent/equivalent.pdf">فرمت پی دی اف</a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="~/Resources/Pdf/Equivalent/equivalent.xlsx">فرمت اکسل</a>
+@section Body
+{
+    <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-right text-size-lg">
+                    <bdi>دانلود فایل معادل یابی</bdi>
+                </div>
+                <div class="panel-body text-right">
+                    <a href="~/Resources/Pdf/Equivalent/equivalent.pdf">فرمت پی دی اف</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="~/Resources/Pdf/Equivalent/equivalent.xlsx">فرمت اکسل</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="table-responsive">
+    <div class="table-responsive">
     <table class="table table-hover table-bordered">
-        <thead>
-            <tr>
-                <th></th>
-                <th dir="ltr">Shell</th>
-                <th dir="ltr">Mobil</th>
-                <th dir="ltr">Esso</th>
-                <th dir="ltr">FUCHS</th>
-                <th dir="ltr">Castrol</th>
-                <th dir="ltr">Total</th>
-                <th dir="rtl">بهران</th>
-                <th dir="rtl">پارس</th>
-                <th dir="rtl">ایرانول</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td dir="ltr">Rotella SX</td>
-                <td dir="ltr">Delvac 1000</td>
-                <td dir="ltr">Essolube X-101</td>
-                <td dir="ltr">Titan Diesel HD</td>
-                <td dir="ltr">CRI monogtde</td>
-                <td dir="ltr">Super A</td>
-                <td dir="rtl">توان</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td dir="ltr">Talona</td>
-                <td dir="ltr">Delvac 1000</td>
-                <td dir="ltr">Essolube X-101</td>
-                <td dir="ltr">Titan Diesel HD</td>
-                <td dir="ltr">XL</td>
-                <td dir="ltr">Super A</td>
-                <td dir="rtl">توان</td>
-                <td dir="rtl">سوپرکیان</td>
-                <td dir="ltr">3000</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td dir="ltr">Rotella X</td>
-                <td dir="ltr">Delvac Special Super</td>
-                <td dir="ltr">Essolube HDX</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">CRH multi</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">جنوب/رخش/شتاب</td>
-                <td dir="rtl">سوپر جم</td>
-                <td dir="ltr">4000</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td dir="ltr">Helix</td>
-                <td dir="ltr">Mobil HD</td>
-                <td dir="ltr">Essolube X 2</td>
-                <td dir="ltr">Titan Super</td>
-                <td dir="ltr">MGO</td>
-                <td dir="ltr">Quartz 2500/3000</td>
-                <td dir="rtl">خودرو</td>
-                <td dir="rtl">تیزرو</td>
-                <td dir="ltr">6000</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td dir="ltr">Helix Red</td>
-                <td dir="ltr">Mobil Special</td>
-                <td dir="ltr">SuperFlow XD</td>
-                <td dir="ltr">Super 4 SX</td>
-                <td dir="ltr">GTX</td>
-                <td dir="ltr">Quartz 4000</td>
-                <td dir="rtl">تکتاز</td>
-                <td dir="rtl">ارس</td>
-                <td dir="ltr">8000</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td dir="ltr">Helix</td>
-                <td dir="ltr">Mobil Extra 4T</td>
-                <td dir="ltr">SuperFlow/HDX Plus</td>
-                <td dir="ltr">Motor Oil HD/Titan Formula</td>
-                <td dir="ltr">GTX Compact</td>
-                <td dir="ltr">Quartz 5000</td>
-                <td dir="rtl">پیشتاز</td>
-                <td dir="rtl">پایا</td>
-                <td dir="ltr">12000</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td dir="ltr">Helix Super</td>
-                <td dir="ltr">Mobil Super/XHP/Super FE</td>
-                <td dir="ltr">Uniflo/Ultra</td>
-                <td dir="ltr">Super GT/CARAT MC/SuperSyn</td>
-                <td dir="ltr">Magnatec GTX</td>
-                <td dir="ltr">Quartz 9000/7000/5000SL</td>
-                <td dir="rtl">سوپر پیشتاز</td>
-                <td dir="rtl">سوپر پایا</td>
-                <td dir="ltr">16000/30000</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td dir="ltr">Helix Ultra/Helix Plus</td>
-                <td dir="ltr">Clean 5000/Super 2000/3000</td>
-                <td dir="ltr">Exxon Superflo</td>
-                <td dir="ltr">Titan SuperSyn/Titan GT1/GT1 Pro</td>
-                <td dir="ltr">Magnatec GTX</td>
-                <td dir="ltr">Quartz INEO/MC3/SM classic</td>
-                <td dir="rtl">رانا</td>
-                <td dir="rtl">سوپر پیشرو</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td dir="ltr">Rotella X</td>
-                <td dir="ltr">Delvac 1200</td>
-                <td dir="ltr">Brindila HDX</td>
-                <td dir="ltr">Titan Diesel HD</td>
-                <td dir="ltr">Tropical</td>
-                <td dir="ltr">Rubia B/Rubia H</td>
-                <td dir="rtl">کویر/صحرا</td>
-                <td dir="rtl">خلیج</td>
-                <td dir="ltr">D-4000</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td dir="ltr">Rimula D</td>
-                <td dir="ltr">Delvac 1200D</td>
-                <td dir="ltr">Essolube X 1</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">CRD</td>
-                <td dir="ltr">Rubia C</td>
-                <td dir="rtl">بندر</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td dir="ltr">Rimula D</td>
-                <td dir="ltr">Delvac 1300</td>
-                <td dir="ltr">Brindila D-3</td>
-                <td dir="ltr">Titan Diesel CD</td>
-                <td dir="ltr">CRD/CW</td>
-                <td dir="ltr">Rubia C</td>
-                <td dir="rtl">شهاب/آذزخش ویژه</td>
-                <td dir="rtl">پاسارگاد/هامون</td>
-                <td dir="ltr">D-5000/D-7000</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td dir="ltr">Rimula</td>
-                <td dir="ltr">Delvac 1300</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Titan Universal XT</td>
-                <td dir="ltr">CRD</td>
-                <td dir="ltr">Quartz Diesel 3000</td>
-                <td dir="rtl">شهاب/آذزخش ویژه</td>
-                <td dir="rtl">پاسارگاد/هامون</td>
-                <td dir="ltr">D-5000/D-7000</td>
-            </tr>
-            <tr>
-                <td>13</td>
-                <td dir="ltr">Rimula Plus</td>
-                <td dir="ltr">Delvac Super Series</td>
-                <td dir="ltr">Essolube Extra XD3</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">ViscoPlus 2000</td>
-                <td dir="ltr">Rubia X</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">هیرمند/لنج</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>14</td>
-                <td dir="ltr">Rimula J</td>
-                <td dir="ltr">Delvac 1300</td>
-                <td dir="ltr">Essolube X 1</td>
-                <td dir="ltr">Titan Universal XT</td>
-                <td dir="ltr">HD</td>
-                <td dir="ltr">Rubia D</td>
-                <td dir="rtl">ژنراتور کلاس 1</td>
-                <td dir="rtl">زنراتور/ویژه</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>15</td>
-                <td dir="ltr">Rimula M/Rimula D/Extra</td>
-                <td dir="ltr">Delvac Super Series</td>
-                <td dir="ltr">Essolube HD</td>
-                <td dir="ltr">Titan Diesel Plus/Titan HD Super</td>
-                <td dir="ltr">GTD</td>
-                <td dir="ltr">Rubia XT/Rubia 4200</td>
-                <td dir="rtl">رعد/لنج/خودرو دیزل</td>
-                <td dir="rtl">دیزل</td>
-                <td dir="ltr">D-9000</td>
-            </tr>
-            <tr>
-                <td>16</td>
-                <td dir="ltr">Rimula X/Rimula D</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Essolube XT5/VM</td>
-                <td dir="ltr">Titan Truck/Titan CFE</td>
-                <td dir="ltr">Tection Medium/Tection J-MAX</td>
-                <td dir="ltr">Rubia Tir 6600</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">پایدار</td>
-                <td dir="ltr">D-15000/D17000</td>
-            </tr>
-            <tr>
-                <td>17</td>
-                <td dir="ltr">Rimula Ultra XT/X</td>
-                <td dir="ltr">Delvac 1</td>
-                <td dir="ltr">Essolube HD/XT5</td>
-                <td dir="ltr">Titan HPE/Truck/UNIC/Plus MC</td>
-                <td dir="ltr">Tection J-MAX</td>
-                <td dir="ltr">Rubia Tir 6600/Caprano</td>
-                <td dir="rtl">توربو دیزل</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>18</td>
-                <td dir="ltr">Rimula MV/Super/RT 4</td>
-                <td dir="ltr">Mobil Agri/Mobilgard HSD</td>
-                <td dir="ltr">Exxon XD-3</td>
-                <td dir="ltr">Titan Truck EGR/Titan Truck Plus</td>
-                <td dir="ltr">Tection Global Agri Powermax</td>
-                <td dir="ltr">Rubia Tri 8600/7400/7200</td>
-                <td dir="ltr">E III توربو</td>
-                <td dir="rtl">سوپر پایدار</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>19</td>
-                <td dir="ltr">ATF II</td>
-                <td dir="ltr">Mobil ATF 220</td>
-                <td dir="ltr">Esso ATF D2</td>
-                <td dir="ltr">Titan ATF 3000/Titan ATF DEX IID</td>
-                <td dir="ltr">TQ-D</td>
-                <td dir="ltr">Fluid II D/Fluid ATX</td>
-                <td dir="ltr">ATF II</td>
-                <td dir="rtl">انتقال اتوماتیک</td>
-                <td dir="ltr">ATF II</td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td dir="ltr">Donax TX/ Donax TG</td>
-                <td dir="ltr">Mobil ATF 320</td>
-                <td dir="ltr">Mercon V</td>
-                <td dir="ltr">Titan ATF 4000/Titan ATF 3353</td>
-                <td dir="ltr">Transmax Z</td>
-                <td dir="ltr">Fluid G 3/FluidEMATIC Syn</td>
-                <td dir="ltr">ATF III</td>
-                <td dir="rtl">انتقال اتوماتیک ویژه</td>
-                <td dir="ltr">ATF III</td>
-            </tr>
-            <tr>
-                <td>21</td>
-                <td dir="ltr">Dentax</td>
-                <td dir="ltr">Mobilube C</td>
-                <td dir="ltr">Esso GearOil ST</td>
-                <td dir="ltr">Gear Oil</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Transmission</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">مدوس</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>22</td>
-                <td dir="ltr">Spirax G/Spirax GX</td>
-                <td dir="ltr">Mobilube GX-A</td>
-                <td dir="ltr">Esso GearOil BV</td>
-                <td dir="ltr">Titan Super Gear/Titan Gear MP</td>
-                <td dir="ltr">EP Range</td>
-                <td dir="ltr">Total EP/Total EP FE</td>
-                <td dir="rtl">سمند MB</td>
-                <td dir="rtl">مدوس EP</td>
-                <td dir="ltr">EP</td>
-            </tr>
-            <tr>
-                <td>23</td>
-                <td dir="ltr">Spirax GSX</td>
-                <td dir="ltr">Mobilube XHP</td>
-                <td dir="ltr">Esso GearOil BV</td>
-                <td dir="ltr">Titan CYTRAC LD</td>
-                <td dir="ltr">Syntrans Max</td>
-                <td dir="ltr">Transmission BV/XI</td>
-                <td dir="ltr">75W80/75W90</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>24</td>
-                <td dir="ltr">Esso GearOil GX</td>
-                <td dir="ltr">Mobilube HD Plus</td>
-                <td dir="ltr">Spirax A/ Spirax AX</td>
-                <td dir="ltr">Titan Super Gear HYP</td>
-                <td dir="ltr">EPX Range</td>
-                <td dir="ltr">Transmission TM/XPM/RS</td>
-                <td dir="rtl">سمند ویژه/سمند VMB</td>
-                <td dir="rtl">مدوس EPS</td>
-                <td dir="ltr">XP</td>
-            </tr>
-            <tr>
-                <td>25</td>
-                <td dir="ltr">Helix</td>
-                <td dir="ltr">Mobil Delvac/Mobilube 1 SHC</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Titan CYTRAC SL</td>
-                <td dir="ltr">SYNTEC Gear Oil</td>
-                <td dir="ltr">Transmission BM/ALD</td>
-                <td dir="rtl">سمند ویژه 75W90</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>26</td>
-                <td dir="ltr">Classis A</td>
-                <td dir="ltr">Flushing Oil</td>
-                <td dir="ltr">Flushing Oil</td>
-                <td dir="ltr">RenOil LD 10</td>
-                <td dir="ltr">Flushing Oil</td>
-                <td dir="ltr">Flushing Oil</td>
-                <td dir="rtl">پاک</td>
-                <td dir="rtl">فلاشینگ</td>
-                <td dir="ltr">FL</td>
-            </tr>
-            <tr>
-                <td>27</td>
-                <td dir="ltr">Vitrea/Morlina</td>
-                <td dir="ltr">Vactra</td>
-                <td dir="ltr">Nuray</td>
-                <td dir="ltr">RenOil AR</td>
-                <td dir="ltr">Magnatec GTX</td>
-                <td dir="ltr">Cirkan C</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">کیوان</td>
-                <td dir="ltr">C</td>
-            </tr>
-            <tr>
-                <td>28</td>
-                <td dir="ltr">Morlina T/Vitrea M</td>
-                <td dir="ltr">Vacuoline 500</td>
-                <td dir="ltr">Nuray RM</td>
-                <td dir="ltr">RenOil Morgear</td>
-                <td dir="ltr">Magna XX</td>
-                <td dir="ltr">Cortis RM</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">کیوان مبارکه</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>29</td>
-                <td dir="ltr">Harvella T</td>
-                <td dir="ltr">Mobil Agri Extra/ Agri Super</td>
-                <td dir="ltr">Esso UNIFARM</td>
-                <td dir="ltr">Titan Hydramot Agrifarm STOU</td>
-                <td dir="ltr">AGRI MP/AGRI MP PLUS</td>
-                <td dir="ltr">Multagri TM/Multagri Super</td>
-                <td dir="rtl">گردان ویژه</td>
-                <td dir="rtl">تراکتور</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>30</td>
-                <td dir="ltr">Donax TD</td>
-                <td dir="ltr">MobilFluid 424</td>
-                <td dir="ltr">Exxon Hydraul 560</td>
-                <td dir="ltr">Titan Hydra PLANTO/AGRIFARM</td>
-                <td dir="ltr">Agri Trans Plus</td>
-                <td dir="ltr">Transmission WB/MP(L)/MP</td>
-                <td dir="rtl">گردان UTTO</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>31</td>
-                <td dir="ltr">Caprinus HTD</td>
-                <td dir="ltr">DIOL RD</td>
-                <td dir="ltr">DIOL RD E </td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">LOCOMAX</td>
-                <td dir="ltr">Rubia G</td>
-                <td dir="rtl">لوکوموتیو BM</td>
-                <td dir="rtl">لوکوموتیو</td>
-                <td dir="ltr">EMD</td>
-            </tr>
-            <tr>
-                <td>32</td>
-                <td dir="ltr">Unedo/Livona</td>
-                <td dir="ltr">Grease AA/Grease 4D</td>
-                <td dir="ltr">Cazar H/Chassis H</td>
-                <td dir="ltr">Renolit Dark Cup/Renolit LAC</td>
-                <td dir="ltr">Impervia CL/Spheerol L</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">لعل - کهربا</td>
-                <td dir="rtl">شاسی راوند(کاپ)</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>33</td>
-                <td dir="ltr">Alvania/ Alvania R,RL</td>
-                <td dir="ltr">Mobilux/Mobilgrease MP</td>
-                <td dir="ltr">Beacon</td>
-                <td dir="ltr">Renolit GP/Renolit MP/Renolit FWA</td>
-                <td dir="ltr">Spheerol MP</td>
-                <td dir="ltr">Multis</td>
-                <td dir="rtl">یاقوت</td>
-                <td dir="rtl">ماهان</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>34</td>
-                <td dir="ltr">Alvania EP/Multiroad</td>
-                <td dir="ltr">Mobilux EP</td>
-                <td dir="ltr">Beacon EP</td>
-                <td dir="ltr">Renolit FEP/Renolit FAP</td>
-                <td dir="ltr">Spheerol EPL/HDLitdium</td>
-                <td dir="ltr">Multis EP</td>
-                <td dir="rtl">یاقوت EP</td>
-                <td dir="rtl">ماهان</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>35</td>
-                <td dir="ltr">Shellzone</td>
-                <td dir="ltr">AntiFreeze Extra</td>
-                <td dir="ltr">Exxon Antifreeze Plus</td>
-                <td dir="ltr">Fricofin</td>
-                <td dir="ltr">Castrol Antifreeze</td>
-                <td dir="ltr">AntiGel</td>
-                <td dir="rtl">دی/بهمن</td>
-                <td dir="rtl">سهند/سهند ویژه</td>
-                <td dir="ltr">AF-G</td>
-            </tr>
-            <tr>
-                <td>36</td>
-                <td dir="ltr">FormulaShell TM/Brake Fluid Dot 3</td>
-                <td dir="ltr">Mobil Brake Fluid DOT 3</td>
-                <td dir="ltr">Esso Brake Fluid 3</td>
-                <td dir="ltr">Brake Fluid(Dot 3)</td>
-                <td dir="ltr">Castrol Brake Fluid-Dot 3</td>
-                <td dir="ltr">HBF 3</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">پارس لاک</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>37</td>
-                <td dir="ltr">Shell Brake Clutch/Fluid Dot 4 Super</td>
-                <td dir="ltr">Mobil Brake Fluid DOT 4</td>
-                <td dir="ltr">Esso Brake Fluid 4</td>
-                <td dir="ltr">HD Brake Fluid (DOT 4)</td>
-                <td dir="ltr">Ferodo Brake Clutch DOT 4</td>
-                <td dir="ltr">HBF 3</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">پارس لاک</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>38</td>
-                <td dir="ltr">Advance SX 2</td>
-                <td dir="ltr">Mobil Super 2T</td>
-                <td dir="ltr">Esso 2T</td>
-                <td dir="ltr">Titan Mix/Titan 2T M</td>
-                <td dir="ltr">Castrol 2T</td>
-                <td dir="ltr">Special 2T</td>
-                <td dir="rtl">دوچرخ سیکلت</td>
-                <td dir="rtl">دو زمانه/دو زمانه ویژه</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>39</td>
-                <td dir="ltr">Lawn Mower 4</td>
-                <td dir="ltr">Mobil Super 4T</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">SILKOLENE Super 4 SX</td>
-                <td dir="ltr">Active 4T</td>
-                <td dir="ltr">4T</td>
-                <td dir="rtl">تندر</td>
-                <td dir="rtl">تیزرو</td>
-                <td dir="ltr">M-100/M-150</td>
-            </tr>
-            <tr>
-                <td>40</td>
-                <td dir="ltr">Helix CNG/Rimula NX</td>
-                <td dir="ltr">Delvac Super GEO</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Titan CNG MC</td>
-                <td dir="ltr">GTX CNG</td>
-                <td dir="ltr">Quartz CNG</td>
-                <td dir="rtl">پاک گاز سوز VEH</td>
-                <td dir="rtl">پارس CNG</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>41</td>
-                <td dir="ltr">Mysella MA</td>
-                <td dir="ltr">Mobil Pegasus V10</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Titan GANYMET</td>
-                <td dir="ltr">CRF</td>
-                <td dir="ltr">Nateria MJ</td>
-                <td dir="rtl">گاز سوز VEM</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>42</td>
-                <td dir="ltr">Mysella LA</td>
-                <td dir="ltr">Mobil Pegasus 705/905</td>
-                <td dir="ltr">Exxon Busgard GEO</td>
-                <td dir="ltr">Titan GENYMET LA</td>
-                <td dir="ltr">Duratec L</td>
-                <td dir="ltr">Nateria MH</td>
-                <td dir="rtl">گازسوز VEL,STL</td>
-                <td dir="rtl">پارس گازسوز</td>
-                <td dir="ltr">G.I.C.X</td>
-            </tr>
-            <tr>
-                <td>43</td>
-                <td dir="ltr">Talona 10W</td>
-                <td dir="ltr">Mobil Hydraulic 10W</td>
-                <td dir="ltr">Essolube Hydraulic 10W</td>
-                <td dir="ltr">Titan Diesel HD</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Rubia B 10W/Rubia H 10W</td>
-                <td dir="rtl">شبدیز 10/قطر ویژه توان 10</td>
-                <td dir="rtl">قطره ویژه/کیان 10</td>
-                <td dir="rtl">ایرانول 10</td>
-            </tr>
-            <tr>
-                <td>44</td>
-                <td dir="ltr">Rimula D 10W/Rimula XT 10W</td>
-                <td dir="ltr">Mobil Delvac Hydraulic 10W</td>
-                <td dir="ltr">Exxon Exxtrans 10W</td>
-                <td dir="ltr">Titan Diesel CD 10W/Hydraulic Oil 10W</td>
-                <td dir="ltr">CRD 10W</td>
-                <td dir="ltr">Rubia S 10W/Rubia C10W</td>
-                <td dir="rtl">آذرخش ویژه 10</td>
-                <td dir="rtl">پاسارگاد 10/هامون 10</td>
-                <td dir="ltr">D-7000</td>
-            </tr>
-            <tr>
-                <td>45</td>
-                <td dir="ltr">Shell Tellus</td>
-                <td dir="ltr">Mobil DTE 20 Series</td>
-                <td dir="ltr">Exxon Nuto H/Hydraulic H</td>
-                <td dir="ltr">Renolin B</td>
-                <td dir="ltr">Hyspin AWS</td>
-                <td dir="ltr">Azolla ZS</td>
-                <td dir="rtl">هیدرولیک H</td>
-                <td dir="rtl">بابک ویژه</td>
-                <td dir="ltr">H</td>
-            </tr>
-            <tr>
-                <td>46</td>
-                <td dir="ltr">Shell Hydraulic Fluid/Shell Tellus C</td>
-                <td dir="ltr">Mobil DTE Oil Series</td>
-                <td dir="ltr">Esso Nuto</td>
-                <td dir="ltr">Renolin A/Renolin DTA</td>
-                <td dir="ltr">Hyspin VG</td>
-                <td dir="ltr">Cirkan RO</td>
-                <td dir="rtl">درفش</td>
-                <td dir="rtl">بابک</td>
-                <td dir="ltr">CX</td>
-            </tr>
-            <tr>
-                <td>47</td>
-                <td dir="ltr">Shell Tellus S</td>
-                <td dir="ltr">Mobil Hydraulic Oil M</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin ZAF B</td>
-                <td dir="ltr">Hyspin ZZ</td>
-                <td dir="ltr">Azolla AF</td>
-                <td dir="rtl">هیدرولیک HP</td>
-                <td dir="rtl">بابک ویژه ZF</td>
-                <td dir="ltr">GTL</td>
-            </tr>
-            <tr>
-                <td>48</td>
-                <td dir="ltr">Shell Tellus T</td>
-                <td dir="ltr">Mobil DTE 10 M Series</td>
-                <td dir="ltr">UNIVIS</td>
-                <td dir="ltr">Renolin MR-MC</td>
-                <td dir="ltr">Hyspin AWH-M</td>
-                <td dir="ltr">Equivis ZS</td>
-                <td dir="rtl">هیدرولیک T</td>
-                <td dir="rtl">هیدرولیک اتوماتیک</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>49</td>
-                <td dir="ltr">Shell Tellus TX</td>
-                <td dir="ltr">Mobil SHC 500 Series </td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin B HVI</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Equivis ZS</td>
-                <td dir="rtl">هیدرولیک TX</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>50</td>
-                <td dir="ltr">Turbo Oil</td>
-                <td dir="ltr">Mobil DTE Oil Series</td>
-                <td dir="ltr">Teresstic</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Perfecto T</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">توربین/توربین EP</td>
-                <td dir="rtl">توربین</td>
-                <td dir="ltr">HB/HBX</td>
-            </tr>
-            <tr>
-                <td>51</td>
-                <td dir="ltr">Turbo GT</td>
-                <td dir="ltr">Mobil DTE 700</td>
-                <td dir="ltr">Teresstic GTC</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">TurboSPEC 925 HQ</td>
-                <td dir="rtl">تورین SP-1</td>
-                <td dir="rtl">توربین گازی GT</td>
-                <td dir="ltr">GTL</td>
-            </tr>
-            <tr>
-                <td>52</td>
-                <td dir="ltr">Turbo Oil T</td>
-                <td dir="ltr">Mobil DTE 790</td>
-                <td dir="ltr">Teresstic GT</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Perfecto T</td>
-                <td dir="ltr">PRESLIA</td>
-                <td dir="rtl">توربین</td>
-                <td dir="rtl">توربین</td>
-                <td dir="ltr">HB/HBX</td>
-            </tr>
-            <tr>
-                <td>53</td>
-                <td dir="ltr">Turbo Oil T,J</td>
-                <td dir="ltr">Mobil DTE 700 Series</td>
-                <td dir="ltr">Teresstic GTC 32</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="rtl">توربین SP-1</td>
-                <td dir="rtl">توربین گازی GT</td>
-                <td dir="ltr">GTL</td>
-            </tr>
-            <tr>
-                <td>54</td>
-                <td dir="ltr">Turbo Oil GT</td>
-                <td dir="ltr">Mobil DTE 800 Series</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Eterna</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">PRESLIA GT</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>55</td>
-                <td dir="ltr">Corena S</td>
-                <td dir="ltr">Mobil Rarus 400 Series</td>
-                <td dir="ltr">Exxolub Series</td>
-                <td dir="ltr">Renolin AC/Renolin 200 Series</td>
-                <td dir="ltr">Aricol PD</td>
-                <td dir="ltr">Dacnis VS</td>
-                <td dir="rtl">کمپرسور VDL</td>
-                <td dir="rtl">کمپرسور</td>
-                <td dir="ltr">VDL</td>
-            </tr>
-            <tr>
-                <td>56</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Mobil Rarus SHC 10000</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin SC/MC Series</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Dacnis LD</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">LPT</td>
-            </tr>
-            <tr>
-                <td>57</td>
-                <td dir="ltr">Madrela Oils GP/Madrela Oils GS</td>
-                <td dir="ltr">Glycole Series</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin LPG</td>
-                <td dir="ltr">Aricol PG</td>
-                <td dir="ltr">Orites DS</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>58</td>
-                <td dir="ltr">Corena D</td>
-                <td dir="ltr">Mobil Pegasus 505 Series</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin DD/VDL Series</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>59</td>
-                <td dir="ltr">Corena P</td>
-                <td dir="ltr">Rarus 800 Series</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin 500 Series</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Dacnis P</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>60</td>
-                <td dir="ltr">Clavus</td>
-                <td dir="ltr">Mobil Gargoyle Arctic</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renosin K</td>
-                <td dir="ltr">Icematic Series</td>
-                <td dir="ltr">LUNARIA FR</td>
-                <td dir="rtl">سرد/سرد ویژه</td>
-                <td dir="rtl">کمپرسور برودتی</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>61</td>
-                <td dir="ltr">Omala Oil Series</td>
-                <td dir="ltr">Mobil Gear XMP</td>
-                <td dir="ltr">Esso SPARTAN</td>
-                <td dir="ltr">Renolin CLP</td>
-                <td dir="ltr">Alpha SP</td>
-                <td dir="ltr">Carter EP</td>
-                <td dir="rtl">بردبار</td>
-                <td dir="rtl">نیسان</td>
-                <td dir="ltr">IG</td>
-            </tr>
-            <tr>
-                <td>62</td>
-                <td dir="ltr">Omala Oil F Series</td>
-                <td dir="ltr">Mobilgear 600 series</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin CLP Plus</td>
-                <td dir="ltr">Tribol 1100</td>
-                <td dir="ltr">Carter ST</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>63</td>
-                <td dir="ltr">Omala HD</td>
-                <td dir="ltr">Mobilgear SHC XMP</td>
-                <td dir="ltr">Spartan SynS EP</td>
-                <td dir="ltr">Renolin UNISYN</td>
-                <td dir="ltr">AlphaSyn HG/AlphaSyn EP</td>
-                <td dir="ltr">Carter SH</td>
-                <td dir="rtl">بردبار PS</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>64</td>
-                <td dir="ltr">Tivela S/Tivela W Series</td>
-                <td dir="ltr">Mobil Gargoyle (HE) Series</td>
-                <td dir="ltr">Esso Glycolube</td>
-                <td dir="ltr">Renolin PGP</td>
-                <td dir="ltr">AlphaSyn PG</td>
-                <td dir="ltr">Carter SY </td>
-                <td dir="rtl">بردبار PG</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>65</td>
-                <td dir="ltr">Tonna T/Tonna S/Tonna V</td>
-                <td dir="ltr">Mobil Vactar/Vacuoline 1400</td>
-                <td dir="ltr">Esso Febis/Febis K series</td>
-                <td dir="ltr">Renep/Renep KN</td>
-                <td dir="ltr">Magna BD/Magnaglide D</td>
-                <td dir="ltr">Drosera MS</td>
-                <td dir="rtl">مقاوم/مقاوم K</td>
-                <td dir="rtl">راگ دریل</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>66</td>
-                <td dir="ltr">Torcula</td>
-                <td dir="ltr">Mobil Almo 500 Series</td>
-                <td dir="ltr">Arox EP</td>
-                <td dir="ltr">RENEP C</td>
-                <td dir="ltr">RD ENVIRO Oil</td>
-                <td dir="ltr">Pneuma</td>
-                <td dir="rtl">مته</td>
-                <td dir="rtl">شکیب</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>67</td>
-                <td dir="ltr">Dromus B</td>
-                <td dir="ltr">Mobil Cut</td>
-                <td dir="ltr">Kutwell 40</td>
-                <td dir="ltr">EcoCool 2510 N</td>
-                <td dir="ltr">Cooledge BI</td>
-                <td dir="ltr">Lactuca MS</td>
-                <td dir="rtl">تراش</td>
-                <td dir="rtl">اترک</td>
-                <td dir="ltr">MF</td>
-            </tr>
-            <tr>
-                <td>68</td>
-                <td dir="ltr">Lubricool</td>
-                <td dir="ltr">Mobilcut 202</td>
-                <td dir="ltr">Kutwell 82</td>
-                <td dir="ltr">EcoCool SLF</td>
-                <td dir="ltr">Syntilo 1023</td>
-                <td dir="ltr">VULSOL MS</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>69</td>
-                <td dir="ltr">Garia D</td>
-                <td dir="ltr">Mobilmet V60 Series</td>
-                <td dir="ltr">Dortan</td>
-                <td dir="ltr">Ecocut 500/200 Series</td>
-                <td dir="ltr">ILOBROACH 13</td>
-                <td dir="ltr">VALONA ST</td>
-                <td dir="rtl">برش</td>
-                <td dir="rtl">ارسکروماشین</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>70</td>
-                <td dir="ltr">Voluta C</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Fenso</td>
-                <td dir="ltr">tdermisol QB/QH</td>
-                <td dir="ltr">Iloquench 395</td>
-                <td dir="ltr">Drasta C</td>
-                <td dir="rtl">آبکار/آبکار ویژه</td>
-                <td dir="rtl">کوئینچینگ</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>71</td>
-                <td dir="ltr">Voluta H/Voluta VH</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Fenso M200A</td>
-                <td dir="ltr">tdermisol QW</td>
-                <td dir="ltr">Iloquench</td>
-                <td dir="ltr">Drasta H</td>
-                <td dir="rtl">آبکارگرم</td>
-                <td dir="rtl">کوئینچینگ 150</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>72</td>
-                <td dir="ltr">tdermia Series</td>
-                <td dir="ltr">Mobiltderm</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin tderm</td>
-                <td dir="ltr">Perfecto HT5</td>
-                <td dir="ltr">Seriola Series</td>
-                <td dir="rtl">حرارت</td>
-                <td dir="rtl">حرارت</td>
-                <td dir="ltr">HT</td>
-            </tr>
-            <tr>
-                <td>73</td>
-                <td dir="ltr">tdermia B</td>
-                <td dir="ltr">Mobil SHC Cibis</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Seriola 1510</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">JVHKS</td>
-            </tr>
-            <tr>
-                <td>74</td>
-                <td dir="ltr">Diala B</td>
-                <td dir="ltr">Mobilect UNIVOLT N 61 B</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">Renolin ELTEC TI</td>
-                <td dir="ltr">Transformer Oil</td>
-                <td dir="ltr">ISOVOLTINE II</td>
-                <td dir="rtl">ترانس II</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-            <tr>
-                <td>75</td>
-                <td dir="ltr">Valvata J</td>
-                <td dir="ltr">Cylinder Oil</td>
-                <td dir="ltr">Cylesstic</td>
-                <td dir="ltr">Renolin CH Series</td>
-                <td dir="ltr">Cresta Series</td>
-                <td dir="ltr">Cyl</td>
-                <td dir="rtl">بهران کاویان</td>
-                <td dir="ltr">-</td>
-                <td dir="ltr">-</td>
-            </tr>
-        </tbody>
+    <thead>
+    <tr>
+        <th></th>
+        <th dir="ltr">Shell</th>
+        <th dir="ltr">Mobil</th>
+        <th dir="ltr">Esso</th>
+        <th dir="ltr">FUCHS</th>
+        <th dir="ltr">Castrol</th>
+        <th dir="ltr">Total</th>
+        <th dir="rtl">بهران</th>
+        <th dir="rtl">پارس</th>
+        <th dir="rtl">ایرانول</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td dir="ltr">Rotella SX</td>
+        <td dir="ltr">Delvac 1000</td>
+        <td dir="ltr">Essolube X-101</td>
+        <td dir="ltr">Titan Diesel HD</td>
+        <td dir="ltr">CRI monogtde</td>
+        <td dir="ltr">Super A</td>
+        <td dir="rtl">توان</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td dir="ltr">Talona</td>
+        <td dir="ltr">Delvac 1000</td>
+        <td dir="ltr">Essolube X-101</td>
+        <td dir="ltr">Titan Diesel HD</td>
+        <td dir="ltr">XL</td>
+        <td dir="ltr">Super A</td>
+        <td dir="rtl">توان</td>
+        <td dir="rtl">سوپرکیان</td>
+        <td dir="ltr">3000</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td dir="ltr">Rotella X</td>
+        <td dir="ltr">Delvac Special Super</td>
+        <td dir="ltr">Essolube HDX</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">CRH multi</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">جنوب/رخش/شتاب</td>
+        <td dir="rtl">سوپر جم</td>
+        <td dir="ltr">4000</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td dir="ltr">Helix</td>
+        <td dir="ltr">Mobil HD</td>
+        <td dir="ltr">Essolube X 2</td>
+        <td dir="ltr">Titan Super</td>
+        <td dir="ltr">MGO</td>
+        <td dir="ltr">Quartz 2500/3000</td>
+        <td dir="rtl">خودرو</td>
+        <td dir="rtl">تیزرو</td>
+        <td dir="ltr">6000</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td dir="ltr">Helix Red</td>
+        <td dir="ltr">Mobil Special</td>
+        <td dir="ltr">SuperFlow XD</td>
+        <td dir="ltr">Super 4 SX</td>
+        <td dir="ltr">GTX</td>
+        <td dir="ltr">Quartz 4000</td>
+        <td dir="rtl">تکتاز</td>
+        <td dir="rtl">ارس</td>
+        <td dir="ltr">8000</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td dir="ltr">Helix</td>
+        <td dir="ltr">Mobil Extra 4T</td>
+        <td dir="ltr">SuperFlow/HDX Plus</td>
+        <td dir="ltr">Motor Oil HD/Titan Formula</td>
+        <td dir="ltr">GTX Compact</td>
+        <td dir="ltr">Quartz 5000</td>
+        <td dir="rtl">پیشتاز</td>
+        <td dir="rtl">پایا</td>
+        <td dir="ltr">12000</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td dir="ltr">Helix Super</td>
+        <td dir="ltr">Mobil Super/XHP/Super FE</td>
+        <td dir="ltr">Uniflo/Ultra</td>
+        <td dir="ltr">Super GT/CARAT MC/SuperSyn</td>
+        <td dir="ltr">Magnatec GTX</td>
+        <td dir="ltr">Quartz 9000/7000/5000SL</td>
+        <td dir="rtl">سوپر پیشتاز</td>
+        <td dir="rtl">سوپر پایا</td>
+        <td dir="ltr">16000/30000</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td dir="ltr">Helix Ultra/Helix Plus</td>
+        <td dir="ltr">Clean 5000/Super 2000/3000</td>
+        <td dir="ltr">Exxon Superflo</td>
+        <td dir="ltr">Titan SuperSyn/Titan GT1/GT1 Pro</td>
+        <td dir="ltr">Magnatec GTX</td>
+        <td dir="ltr">Quartz INEO/MC3/SM classic</td>
+        <td dir="rtl">رانا</td>
+        <td dir="rtl">سوپر پیشرو</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td dir="ltr">Rotella X</td>
+        <td dir="ltr">Delvac 1200</td>
+        <td dir="ltr">Brindila HDX</td>
+        <td dir="ltr">Titan Diesel HD</td>
+        <td dir="ltr">Tropical</td>
+        <td dir="ltr">Rubia B/Rubia H</td>
+        <td dir="rtl">کویر/صحرا</td>
+        <td dir="rtl">خلیج</td>
+        <td dir="ltr">D-4000</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td dir="ltr">Rimula D</td>
+        <td dir="ltr">Delvac 1200D</td>
+        <td dir="ltr">Essolube X 1</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">CRD</td>
+        <td dir="ltr">Rubia C</td>
+        <td dir="rtl">بندر</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td dir="ltr">Rimula D</td>
+        <td dir="ltr">Delvac 1300</td>
+        <td dir="ltr">Brindila D-3</td>
+        <td dir="ltr">Titan Diesel CD</td>
+        <td dir="ltr">CRD/CW</td>
+        <td dir="ltr">Rubia C</td>
+        <td dir="rtl">شهاب/آذزخش ویژه</td>
+        <td dir="rtl">پاسارگاد/هامون</td>
+        <td dir="ltr">D-5000/D-7000</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td dir="ltr">Rimula</td>
+        <td dir="ltr">Delvac 1300</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Titan Universal XT</td>
+        <td dir="ltr">CRD</td>
+        <td dir="ltr">Quartz Diesel 3000</td>
+        <td dir="rtl">شهاب/آذزخش ویژه</td>
+        <td dir="rtl">پاسارگاد/هامون</td>
+        <td dir="ltr">D-5000/D-7000</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td dir="ltr">Rimula Plus</td>
+        <td dir="ltr">Delvac Super Series</td>
+        <td dir="ltr">Essolube Extra XD3</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">ViscoPlus 2000</td>
+        <td dir="ltr">Rubia X</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">هیرمند/لنج</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td dir="ltr">Rimula J</td>
+        <td dir="ltr">Delvac 1300</td>
+        <td dir="ltr">Essolube X 1</td>
+        <td dir="ltr">Titan Universal XT</td>
+        <td dir="ltr">HD</td>
+        <td dir="ltr">Rubia D</td>
+        <td dir="rtl">ژنراتور کلاس 1</td>
+        <td dir="rtl">زنراتور/ویژه</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td dir="ltr">Rimula M/Rimula D/Extra</td>
+        <td dir="ltr">Delvac Super Series</td>
+        <td dir="ltr">Essolube HD</td>
+        <td dir="ltr">Titan Diesel Plus/Titan HD Super</td>
+        <td dir="ltr">GTD</td>
+        <td dir="ltr">Rubia XT/Rubia 4200</td>
+        <td dir="rtl">رعد/لنج/خودرو دیزل</td>
+        <td dir="rtl">دیزل</td>
+        <td dir="ltr">D-9000</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td dir="ltr">Rimula X/Rimula D</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Essolube XT5/VM</td>
+        <td dir="ltr">Titan Truck/Titan CFE</td>
+        <td dir="ltr">Tection Medium/Tection J-MAX</td>
+        <td dir="ltr">Rubia Tir 6600</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">پایدار</td>
+        <td dir="ltr">D-15000/D17000</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td dir="ltr">Rimula Ultra XT/X</td>
+        <td dir="ltr">Delvac 1</td>
+        <td dir="ltr">Essolube HD/XT5</td>
+        <td dir="ltr">Titan HPE/Truck/UNIC/Plus MC</td>
+        <td dir="ltr">Tection J-MAX</td>
+        <td dir="ltr">Rubia Tir 6600/Caprano</td>
+        <td dir="rtl">توربو دیزل</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td dir="ltr">Rimula MV/Super/RT 4</td>
+        <td dir="ltr">Mobil Agri/Mobilgard HSD</td>
+        <td dir="ltr">Exxon XD-3</td>
+        <td dir="ltr">Titan Truck EGR/Titan Truck Plus</td>
+        <td dir="ltr">Tection Global Agri Powermax</td>
+        <td dir="ltr">Rubia Tri 8600/7400/7200</td>
+        <td dir="ltr">E III توربو</td>
+        <td dir="rtl">سوپر پایدار</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td dir="ltr">ATF II</td>
+        <td dir="ltr">Mobil ATF 220</td>
+        <td dir="ltr">Esso ATF D2</td>
+        <td dir="ltr">Titan ATF 3000/Titan ATF DEX IID</td>
+        <td dir="ltr">TQ-D</td>
+        <td dir="ltr">Fluid II D/Fluid ATX</td>
+        <td dir="ltr">ATF II</td>
+        <td dir="rtl">انتقال اتوماتیک</td>
+        <td dir="ltr">ATF II</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td dir="ltr">Donax TX/ Donax TG</td>
+        <td dir="ltr">Mobil ATF 320</td>
+        <td dir="ltr">Mercon V</td>
+        <td dir="ltr">Titan ATF 4000/Titan ATF 3353</td>
+        <td dir="ltr">Transmax Z</td>
+        <td dir="ltr">Fluid G 3/FluidEMATIC Syn</td>
+        <td dir="ltr">ATF III</td>
+        <td dir="rtl">انتقال اتوماتیک ویژه</td>
+        <td dir="ltr">ATF III</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td dir="ltr">Dentax</td>
+        <td dir="ltr">Mobilube C</td>
+        <td dir="ltr">Esso GearOil ST</td>
+        <td dir="ltr">Gear Oil</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Transmission</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">مدوس</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td dir="ltr">Spirax G/Spirax GX</td>
+        <td dir="ltr">Mobilube GX-A</td>
+        <td dir="ltr">Esso GearOil BV</td>
+        <td dir="ltr">Titan Super Gear/Titan Gear MP</td>
+        <td dir="ltr">EP Range</td>
+        <td dir="ltr">Total EP/Total EP FE</td>
+        <td dir="rtl">سمند MB</td>
+        <td dir="rtl">مدوس EP</td>
+        <td dir="ltr">EP</td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td dir="ltr">Spirax GSX</td>
+        <td dir="ltr">Mobilube XHP</td>
+        <td dir="ltr">Esso GearOil BV</td>
+        <td dir="ltr">Titan CYTRAC LD</td>
+        <td dir="ltr">Syntrans Max</td>
+        <td dir="ltr">Transmission BV/XI</td>
+        <td dir="ltr">75W80/75W90</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td dir="ltr">Esso GearOil GX</td>
+        <td dir="ltr">Mobilube HD Plus</td>
+        <td dir="ltr">Spirax A/ Spirax AX</td>
+        <td dir="ltr">Titan Super Gear HYP</td>
+        <td dir="ltr">EPX Range</td>
+        <td dir="ltr">Transmission TM/XPM/RS</td>
+        <td dir="rtl">سمند ویژه/سمند VMB</td>
+        <td dir="rtl">مدوس EPS</td>
+        <td dir="ltr">XP</td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td dir="ltr">Helix</td>
+        <td dir="ltr">Mobil Delvac/Mobilube 1 SHC</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Titan CYTRAC SL</td>
+        <td dir="ltr">SYNTEC Gear Oil</td>
+        <td dir="ltr">Transmission BM/ALD</td>
+        <td dir="rtl">سمند ویژه 75W90</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td dir="ltr">Classis A</td>
+        <td dir="ltr">Flushing Oil</td>
+        <td dir="ltr">Flushing Oil</td>
+        <td dir="ltr">RenOil LD 10</td>
+        <td dir="ltr">Flushing Oil</td>
+        <td dir="ltr">Flushing Oil</td>
+        <td dir="rtl">پاک</td>
+        <td dir="rtl">فلاشینگ</td>
+        <td dir="ltr">FL</td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td dir="ltr">Vitrea/Morlina</td>
+        <td dir="ltr">Vactra</td>
+        <td dir="ltr">Nuray</td>
+        <td dir="ltr">RenOil AR</td>
+        <td dir="ltr">Magnatec GTX</td>
+        <td dir="ltr">Cirkan C</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">کیوان</td>
+        <td dir="ltr">C</td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td dir="ltr">Morlina T/Vitrea M</td>
+        <td dir="ltr">Vacuoline 500</td>
+        <td dir="ltr">Nuray RM</td>
+        <td dir="ltr">RenOil Morgear</td>
+        <td dir="ltr">Magna XX</td>
+        <td dir="ltr">Cortis RM</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">کیوان مبارکه</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td dir="ltr">Harvella T</td>
+        <td dir="ltr">Mobil Agri Extra/ Agri Super</td>
+        <td dir="ltr">Esso UNIFARM</td>
+        <td dir="ltr">Titan Hydramot Agrifarm STOU</td>
+        <td dir="ltr">AGRI MP/AGRI MP PLUS</td>
+        <td dir="ltr">Multagri TM/Multagri Super</td>
+        <td dir="rtl">گردان ویژه</td>
+        <td dir="rtl">تراکتور</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td dir="ltr">Donax TD</td>
+        <td dir="ltr">MobilFluid 424</td>
+        <td dir="ltr">Exxon Hydraul 560</td>
+        <td dir="ltr">Titan Hydra PLANTO/AGRIFARM</td>
+        <td dir="ltr">Agri Trans Plus</td>
+        <td dir="ltr">Transmission WB/MP(L)/MP</td>
+        <td dir="rtl">گردان UTTO</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td dir="ltr">Caprinus HTD</td>
+        <td dir="ltr">DIOL RD</td>
+        <td dir="ltr">DIOL RD E </td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">LOCOMAX</td>
+        <td dir="ltr">Rubia G</td>
+        <td dir="rtl">لوکوموتیو BM</td>
+        <td dir="rtl">لوکوموتیو</td>
+        <td dir="ltr">EMD</td>
+    </tr>
+    <tr>
+        <td>32</td>
+        <td dir="ltr">Unedo/Livona</td>
+        <td dir="ltr">Grease AA/Grease 4D</td>
+        <td dir="ltr">Cazar H/Chassis H</td>
+        <td dir="ltr">Renolit Dark Cup/Renolit LAC</td>
+        <td dir="ltr">Impervia CL/Spheerol L</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">لعل - کهربا</td>
+        <td dir="rtl">شاسی راوند(کاپ)</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>33</td>
+        <td dir="ltr">Alvania/ Alvania R,RL</td>
+        <td dir="ltr">Mobilux/Mobilgrease MP</td>
+        <td dir="ltr">Beacon</td>
+        <td dir="ltr">Renolit GP/Renolit MP/Renolit FWA</td>
+        <td dir="ltr">Spheerol MP</td>
+        <td dir="ltr">Multis</td>
+        <td dir="rtl">یاقوت</td>
+        <td dir="rtl">ماهان</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>34</td>
+        <td dir="ltr">Alvania EP/Multiroad</td>
+        <td dir="ltr">Mobilux EP</td>
+        <td dir="ltr">Beacon EP</td>
+        <td dir="ltr">Renolit FEP/Renolit FAP</td>
+        <td dir="ltr">Spheerol EPL/HDLitdium</td>
+        <td dir="ltr">Multis EP</td>
+        <td dir="rtl">یاقوت EP</td>
+        <td dir="rtl">ماهان</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>35</td>
+        <td dir="ltr">Shellzone</td>
+        <td dir="ltr">AntiFreeze Extra</td>
+        <td dir="ltr">Exxon Antifreeze Plus</td>
+        <td dir="ltr">Fricofin</td>
+        <td dir="ltr">Castrol Antifreeze</td>
+        <td dir="ltr">AntiGel</td>
+        <td dir="rtl">دی/بهمن</td>
+        <td dir="rtl">سهند/سهند ویژه</td>
+        <td dir="ltr">AF-G</td>
+    </tr>
+    <tr>
+        <td>36</td>
+        <td dir="ltr">FormulaShell TM/Brake Fluid Dot 3</td>
+        <td dir="ltr">Mobil Brake Fluid DOT 3</td>
+        <td dir="ltr">Esso Brake Fluid 3</td>
+        <td dir="ltr">Brake Fluid(Dot 3)</td>
+        <td dir="ltr">Castrol Brake Fluid-Dot 3</td>
+        <td dir="ltr">HBF 3</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">پارس لاک</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>37</td>
+        <td dir="ltr">Shell Brake Clutch/Fluid Dot 4 Super</td>
+        <td dir="ltr">Mobil Brake Fluid DOT 4</td>
+        <td dir="ltr">Esso Brake Fluid 4</td>
+        <td dir="ltr">HD Brake Fluid (DOT 4)</td>
+        <td dir="ltr">Ferodo Brake Clutch DOT 4</td>
+        <td dir="ltr">HBF 3</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">پارس لاک</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>38</td>
+        <td dir="ltr">Advance SX 2</td>
+        <td dir="ltr">Mobil Super 2T</td>
+        <td dir="ltr">Esso 2T</td>
+        <td dir="ltr">Titan Mix/Titan 2T M</td>
+        <td dir="ltr">Castrol 2T</td>
+        <td dir="ltr">Special 2T</td>
+        <td dir="rtl">دوچرخ سیکلت</td>
+        <td dir="rtl">دو زمانه/دو زمانه ویژه</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>39</td>
+        <td dir="ltr">Lawn Mower 4</td>
+        <td dir="ltr">Mobil Super 4T</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">SILKOLENE Super 4 SX</td>
+        <td dir="ltr">Active 4T</td>
+        <td dir="ltr">4T</td>
+        <td dir="rtl">تندر</td>
+        <td dir="rtl">تیزرو</td>
+        <td dir="ltr">M-100/M-150</td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td dir="ltr">Helix CNG/Rimula NX</td>
+        <td dir="ltr">Delvac Super GEO</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Titan CNG MC</td>
+        <td dir="ltr">GTX CNG</td>
+        <td dir="ltr">Quartz CNG</td>
+        <td dir="rtl">پاک گاز سوز VEH</td>
+        <td dir="rtl">پارس CNG</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>41</td>
+        <td dir="ltr">Mysella MA</td>
+        <td dir="ltr">Mobil Pegasus V10</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Titan GANYMET</td>
+        <td dir="ltr">CRF</td>
+        <td dir="ltr">Nateria MJ</td>
+        <td dir="rtl">گاز سوز VEM</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>42</td>
+        <td dir="ltr">Mysella LA</td>
+        <td dir="ltr">Mobil Pegasus 705/905</td>
+        <td dir="ltr">Exxon Busgard GEO</td>
+        <td dir="ltr">Titan GENYMET LA</td>
+        <td dir="ltr">Duratec L</td>
+        <td dir="ltr">Nateria MH</td>
+        <td dir="rtl">گازسوز VEL,STL</td>
+        <td dir="rtl">پارس گازسوز</td>
+        <td dir="ltr">G.I.C.X</td>
+    </tr>
+    <tr>
+        <td>43</td>
+        <td dir="ltr">Talona 10W</td>
+        <td dir="ltr">Mobil Hydraulic 10W</td>
+        <td dir="ltr">Essolube Hydraulic 10W</td>
+        <td dir="ltr">Titan Diesel HD</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Rubia B 10W/Rubia H 10W</td>
+        <td dir="rtl">شبدیز 10/قطر ویژه توان 10</td>
+        <td dir="rtl">قطره ویژه/کیان 10</td>
+        <td dir="rtl">ایرانول 10</td>
+    </tr>
+    <tr>
+        <td>44</td>
+        <td dir="ltr">Rimula D 10W/Rimula XT 10W</td>
+        <td dir="ltr">Mobil Delvac Hydraulic 10W</td>
+        <td dir="ltr">Exxon Exxtrans 10W</td>
+        <td dir="ltr">Titan Diesel CD 10W/Hydraulic Oil 10W</td>
+        <td dir="ltr">CRD 10W</td>
+        <td dir="ltr">Rubia S 10W/Rubia C10W</td>
+        <td dir="rtl">آذرخش ویژه 10</td>
+        <td dir="rtl">پاسارگاد 10/هامون 10</td>
+        <td dir="ltr">D-7000</td>
+    </tr>
+    <tr>
+        <td>45</td>
+        <td dir="ltr">Shell Tellus</td>
+        <td dir="ltr">Mobil DTE 20 Series</td>
+        <td dir="ltr">Exxon Nuto H/Hydraulic H</td>
+        <td dir="ltr">Renolin B</td>
+        <td dir="ltr">Hyspin AWS</td>
+        <td dir="ltr">Azolla ZS</td>
+        <td dir="rtl">هیدرولیک H</td>
+        <td dir="rtl">بابک ویژه</td>
+        <td dir="ltr">H</td>
+    </tr>
+    <tr>
+        <td>46</td>
+        <td dir="ltr">Shell Hydraulic Fluid/Shell Tellus C</td>
+        <td dir="ltr">Mobil DTE Oil Series</td>
+        <td dir="ltr">Esso Nuto</td>
+        <td dir="ltr">Renolin A/Renolin DTA</td>
+        <td dir="ltr">Hyspin VG</td>
+        <td dir="ltr">Cirkan RO</td>
+        <td dir="rtl">درفش</td>
+        <td dir="rtl">بابک</td>
+        <td dir="ltr">CX</td>
+    </tr>
+    <tr>
+        <td>47</td>
+        <td dir="ltr">Shell Tellus S</td>
+        <td dir="ltr">Mobil Hydraulic Oil M</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin ZAF B</td>
+        <td dir="ltr">Hyspin ZZ</td>
+        <td dir="ltr">Azolla AF</td>
+        <td dir="rtl">هیدرولیک HP</td>
+        <td dir="rtl">بابک ویژه ZF</td>
+        <td dir="ltr">GTL</td>
+    </tr>
+    <tr>
+        <td>48</td>
+        <td dir="ltr">Shell Tellus T</td>
+        <td dir="ltr">Mobil DTE 10 M Series</td>
+        <td dir="ltr">UNIVIS</td>
+        <td dir="ltr">Renolin MR-MC</td>
+        <td dir="ltr">Hyspin AWH-M</td>
+        <td dir="ltr">Equivis ZS</td>
+        <td dir="rtl">هیدرولیک T</td>
+        <td dir="rtl">هیدرولیک اتوماتیک</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>49</td>
+        <td dir="ltr">Shell Tellus TX</td>
+        <td dir="ltr">Mobil SHC 500 Series </td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin B HVI</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Equivis ZS</td>
+        <td dir="rtl">هیدرولیک TX</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td dir="ltr">Turbo Oil</td>
+        <td dir="ltr">Mobil DTE Oil Series</td>
+        <td dir="ltr">Teresstic</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Perfecto T</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">توربین/توربین EP</td>
+        <td dir="rtl">توربین</td>
+        <td dir="ltr">HB/HBX</td>
+    </tr>
+    <tr>
+        <td>51</td>
+        <td dir="ltr">Turbo GT</td>
+        <td dir="ltr">Mobil DTE 700</td>
+        <td dir="ltr">Teresstic GTC</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">TurboSPEC 925 HQ</td>
+        <td dir="rtl">تورین SP-1</td>
+        <td dir="rtl">توربین گازی GT</td>
+        <td dir="ltr">GTL</td>
+    </tr>
+    <tr>
+        <td>52</td>
+        <td dir="ltr">Turbo Oil T</td>
+        <td dir="ltr">Mobil DTE 790</td>
+        <td dir="ltr">Teresstic GT</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Perfecto T</td>
+        <td dir="ltr">PRESLIA</td>
+        <td dir="rtl">توربین</td>
+        <td dir="rtl">توربین</td>
+        <td dir="ltr">HB/HBX</td>
+    </tr>
+    <tr>
+        <td>53</td>
+        <td dir="ltr">Turbo Oil T,J</td>
+        <td dir="ltr">Mobil DTE 700 Series</td>
+        <td dir="ltr">Teresstic GTC 32</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="rtl">توربین SP-1</td>
+        <td dir="rtl">توربین گازی GT</td>
+        <td dir="ltr">GTL</td>
+    </tr>
+    <tr>
+        <td>54</td>
+        <td dir="ltr">Turbo Oil GT</td>
+        <td dir="ltr">Mobil DTE 800 Series</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Eterna</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">PRESLIA GT</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>55</td>
+        <td dir="ltr">Corena S</td>
+        <td dir="ltr">Mobil Rarus 400 Series</td>
+        <td dir="ltr">Exxolub Series</td>
+        <td dir="ltr">Renolin AC/Renolin 200 Series</td>
+        <td dir="ltr">Aricol PD</td>
+        <td dir="ltr">Dacnis VS</td>
+        <td dir="rtl">کمپرسور VDL</td>
+        <td dir="rtl">کمپرسور</td>
+        <td dir="ltr">VDL</td>
+    </tr>
+    <tr>
+        <td>56</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Mobil Rarus SHC 10000</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin SC/MC Series</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Dacnis LD</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">LPT</td>
+    </tr>
+    <tr>
+        <td>57</td>
+        <td dir="ltr">Madrela Oils GP/Madrela Oils GS</td>
+        <td dir="ltr">Glycole Series</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin LPG</td>
+        <td dir="ltr">Aricol PG</td>
+        <td dir="ltr">Orites DS</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>58</td>
+        <td dir="ltr">Corena D</td>
+        <td dir="ltr">Mobil Pegasus 505 Series</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin DD/VDL Series</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>59</td>
+        <td dir="ltr">Corena P</td>
+        <td dir="ltr">Rarus 800 Series</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin 500 Series</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Dacnis P</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>60</td>
+        <td dir="ltr">Clavus</td>
+        <td dir="ltr">Mobil Gargoyle Arctic</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renosin K</td>
+        <td dir="ltr">Icematic Series</td>
+        <td dir="ltr">LUNARIA FR</td>
+        <td dir="rtl">سرد/سرد ویژه</td>
+        <td dir="rtl">کمپرسور برودتی</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>61</td>
+        <td dir="ltr">Omala Oil Series</td>
+        <td dir="ltr">Mobil Gear XMP</td>
+        <td dir="ltr">Esso SPARTAN</td>
+        <td dir="ltr">Renolin CLP</td>
+        <td dir="ltr">Alpha SP</td>
+        <td dir="ltr">Carter EP</td>
+        <td dir="rtl">بردبار</td>
+        <td dir="rtl">نیسان</td>
+        <td dir="ltr">IG</td>
+    </tr>
+    <tr>
+        <td>62</td>
+        <td dir="ltr">Omala Oil F Series</td>
+        <td dir="ltr">Mobilgear 600 series</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin CLP Plus</td>
+        <td dir="ltr">Tribol 1100</td>
+        <td dir="ltr">Carter ST</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>63</td>
+        <td dir="ltr">Omala HD</td>
+        <td dir="ltr">Mobilgear SHC XMP</td>
+        <td dir="ltr">Spartan SynS EP</td>
+        <td dir="ltr">Renolin UNISYN</td>
+        <td dir="ltr">AlphaSyn HG/AlphaSyn EP</td>
+        <td dir="ltr">Carter SH</td>
+        <td dir="rtl">بردبار PS</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>64</td>
+        <td dir="ltr">Tivela S/Tivela W Series</td>
+        <td dir="ltr">Mobil Gargoyle (HE) Series</td>
+        <td dir="ltr">Esso Glycolube</td>
+        <td dir="ltr">Renolin PGP</td>
+        <td dir="ltr">AlphaSyn PG</td>
+        <td dir="ltr">Carter SY </td>
+        <td dir="rtl">بردبار PG</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>65</td>
+        <td dir="ltr">Tonna T/Tonna S/Tonna V</td>
+        <td dir="ltr">Mobil Vactar/Vacuoline 1400</td>
+        <td dir="ltr">Esso Febis/Febis K series</td>
+        <td dir="ltr">Renep/Renep KN</td>
+        <td dir="ltr">Magna BD/Magnaglide D</td>
+        <td dir="ltr">Drosera MS</td>
+        <td dir="rtl">مقاوم/مقاوم K</td>
+        <td dir="rtl">راگ دریل</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>66</td>
+        <td dir="ltr">Torcula</td>
+        <td dir="ltr">Mobil Almo 500 Series</td>
+        <td dir="ltr">Arox EP</td>
+        <td dir="ltr">RENEP C</td>
+        <td dir="ltr">RD ENVIRO Oil</td>
+        <td dir="ltr">Pneuma</td>
+        <td dir="rtl">مته</td>
+        <td dir="rtl">شکیب</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>67</td>
+        <td dir="ltr">Dromus B</td>
+        <td dir="ltr">Mobil Cut</td>
+        <td dir="ltr">Kutwell 40</td>
+        <td dir="ltr">EcoCool 2510 N</td>
+        <td dir="ltr">Cooledge BI</td>
+        <td dir="ltr">Lactuca MS</td>
+        <td dir="rtl">تراش</td>
+        <td dir="rtl">اترک</td>
+        <td dir="ltr">MF</td>
+    </tr>
+    <tr>
+        <td>68</td>
+        <td dir="ltr">Lubricool</td>
+        <td dir="ltr">Mobilcut 202</td>
+        <td dir="ltr">Kutwell 82</td>
+        <td dir="ltr">EcoCool SLF</td>
+        <td dir="ltr">Syntilo 1023</td>
+        <td dir="ltr">VULSOL MS</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>69</td>
+        <td dir="ltr">Garia D</td>
+        <td dir="ltr">Mobilmet V60 Series</td>
+        <td dir="ltr">Dortan</td>
+        <td dir="ltr">Ecocut 500/200 Series</td>
+        <td dir="ltr">ILOBROACH 13</td>
+        <td dir="ltr">VALONA ST</td>
+        <td dir="rtl">برش</td>
+        <td dir="rtl">ارسکروماشین</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>70</td>
+        <td dir="ltr">Voluta C</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Fenso</td>
+        <td dir="ltr">tdermisol QB/QH</td>
+        <td dir="ltr">Iloquench 395</td>
+        <td dir="ltr">Drasta C</td>
+        <td dir="rtl">آبکار/آبکار ویژه</td>
+        <td dir="rtl">کوئینچینگ</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>71</td>
+        <td dir="ltr">Voluta H/Voluta VH</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Fenso M200A</td>
+        <td dir="ltr">tdermisol QW</td>
+        <td dir="ltr">Iloquench</td>
+        <td dir="ltr">Drasta H</td>
+        <td dir="rtl">آبکارگرم</td>
+        <td dir="rtl">کوئینچینگ 150</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>72</td>
+        <td dir="ltr">tdermia Series</td>
+        <td dir="ltr">Mobiltderm</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin tderm</td>
+        <td dir="ltr">Perfecto HT5</td>
+        <td dir="ltr">Seriola Series</td>
+        <td dir="rtl">حرارت</td>
+        <td dir="rtl">حرارت</td>
+        <td dir="ltr">HT</td>
+    </tr>
+    <tr>
+        <td>73</td>
+        <td dir="ltr">tdermia B</td>
+        <td dir="ltr">Mobil SHC Cibis</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Seriola 1510</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">JVHKS</td>
+    </tr>
+    <tr>
+        <td>74</td>
+        <td dir="ltr">Diala B</td>
+        <td dir="ltr">Mobilect UNIVOLT N 61 B</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">Renolin ELTEC TI</td>
+        <td dir="ltr">Transformer Oil</td>
+        <td dir="ltr">ISOVOLTINE II</td>
+        <td dir="rtl">ترانس II</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    <tr>
+        <td>75</td>
+        <td dir="ltr">Valvata J</td>
+        <td dir="ltr">Cylinder Oil</td>
+        <td dir="ltr">Cylesstic</td>
+        <td dir="ltr">Renolin CH Series</td>
+        <td dir="ltr">Cresta Series</td>
+        <td dir="ltr">Cyl</td>
+        <td dir="rtl">بهران کاویان</td>
+        <td dir="ltr">-</td>
+        <td dir="ltr">-</td>
+    </tr>
+    </tbody>
     </table>
-</div>
+    </div>
+}
+
+@section Footer
+{
+    @Html.Partial("Footer")
+}
+
+
+
+
+
+

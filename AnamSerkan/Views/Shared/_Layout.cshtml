@@ -38,52 +38,16 @@
             @RenderSection("SideNav", required: false);
         </div>
         <div class="col-sm-10 col-xs-12 main">
-            @RenderBody()
+            @RenderSection("Body",required:true)
         </div>
     </div>
 </div>
 
-    @if (IsSectionDefined("Footer"))
-    {
-        @RenderSection("Footer")
-    }
-    else
-    {
-        <footer class="container-fluid text-center">
-            <div id="footer-middle" style="direction: rtl">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-push-6">
-                        <div>
-                            <h3>درباره ما</h3>
-                            <div>
-                                <p>
-                                    <bdi>
-                                        شرکت آنام سرکان با بیش از 25 سال سابقه در زمینه تامین انواع روانسازهای صنعتی، موتوری و کشاورزی و همچنین داشتن کادر مشاوره و فروش مجرب افتخار دارد در خدمت صنعت کشور بوده و در این مدت با شرکتهای راه سازی و عمرانی کشور همکاری داشته است. لذا این شرکت آمادگی خود را در جهت تامین انواع روانسازهای صنعتی و موتوری و کشاورزی و ماشین آلات راه سازی اعلام می دارد.
-                                    </bdi>
-                                </p>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-sm-pull-6">
-                        <h3>آدرس</h3>
-                        تهران، فلکه دوم صادقیه، بلوار اشرفی اصفهانی، نرسیده به بلوار مرزداران، برج نگین رضا
-                        <br />
-                        <span class="glyphicon glyphicon-earphone"></span>021-44034117
-                        <span class="glyphicon glyphicon-earphone"></span>021-44034116
-                    </div>
-                </div>
-            </div>
-            <div id="footer-bottom">
-
-                <div class="row">
-                    <div class="col-xs-12">
-                        &copy; 2017 - anamserkan
-                    </div>
-                </div>
-            </div>
-        </footer>
-    }
+   
+        @RenderSection("Footer",required:false)
+    
+        
+    
 
 
     @RenderSection("scripts", required: false)

@@ -35,12 +35,17 @@
 {
     @Html.Partial("SideNav")
 }
+@section Body
+{
+    <h2>خدمات برتر</h2>
+    <h2>تکیه بر تجربه و تخصص</h2>
+    <h2>عملکرد سریع</h2>
+}
 
-<h2>Home AgainFirst</h2>
-<h2>Home</h2>
-<h2>Home Again</h2>
-<p1>@ViewBag.Title</p1>
-<p>This was</p>
+@section Footer
+{
+    @Html.Partial("Footer")
+}
 
 @section scripts{
     <!-- bxSlider Javascript file -->
