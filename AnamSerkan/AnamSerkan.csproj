@@ -43,7 +43,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Shared\Components\Product\" />
     <Folder Include="wwwroot\css\sass\helpers\" />
     <Folder Include="wwwroot\css\sass\base\" />
     <Folder Include="wwwroot\Resources\Images\Products\Tire\" />

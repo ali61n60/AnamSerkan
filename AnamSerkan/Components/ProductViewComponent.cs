@@ -16,7 +16,7 @@ namespace AnamSerkan.Components
             //    .Select(x => x.Category)
             //    .Distinct()
             //    .OrderBy(x => x));
-            return null;
+            return View();
         }
     }
 }

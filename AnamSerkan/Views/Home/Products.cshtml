@@ -36,9 +36,10 @@
     </div>
     <div class="row">
         <div class="col-sm-3 ">
+            @await Component.InvokeAsync("Product",null)
             <div class="row productComponent">
                 <a href="~/Resources/Pdf/Products/Oil/behranOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/behranOil.png" />
+                    <img src="~/Resources/Images/Products/Oil/behranOil.png"/>
                 </a>
                 <br/>
                 <span>نفت بهران</span>
