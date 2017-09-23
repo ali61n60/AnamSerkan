@@ -1,3 +1,9 @@
-﻿@model object
+﻿@model Product
 
-<div>Hello World!!!</div>
+<div class="row productComponent">
+    <a href="@Model.ProductDetailUrl" target="_blank">
+        <img src="@Model.ImagePath"/>
+    </a>
+    <br/>
+    <span>@Model.ProductName</span>
+</div>
