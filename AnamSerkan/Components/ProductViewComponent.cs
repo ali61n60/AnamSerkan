@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AnamSerkan.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewComponents;
 
 namespace AnamSerkan.Components
 {
@@ -12,11 +13,6 @@ namespace AnamSerkan.Components
 
         public IViewComponentResult Invoke(Product product)
         {
-            //ViewBag.SelectedCategory = RouteData?.Values["category"];
-            //return View(repository.GetProducts()
-            //    .Select(x => x.Category)
-            //    .Distinct()
-            //    .OrderBy(x => x));
             return View(product);
         }
     }
