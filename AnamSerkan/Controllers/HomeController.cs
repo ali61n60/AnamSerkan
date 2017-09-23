@@ -26,15 +26,7 @@ namespace AnamSerkan.Controllers
         }
         public IActionResult Products()
         {
-            List<Product> productList=new List<Product>();
-            productList.Add(new Product()
-            {
-                ProductDetailUrl = "/Resources/Pdf/Products/Oil/behranOil.pdf",
-                ImagePath = "/Resources/Images/Products/Oil/behranOil.png",
-                ProductName = "22نفت بهران"
-            });
-            
-            return View(productList.ToArray());
+            return View(ProductRepository.GetAllProducts());
         }
 
         public IActionResult Equivalent()
