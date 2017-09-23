@@ -34,129 +34,57 @@
             <h1>محصولات شرکت های داخلی</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-3 ">
-            @await Component.InvokeAsync("Product",Model[0])
-            @*<div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/behranOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/behranOil.png"/>
-                </a>
-                <br/>
-                <span>نفت بهران</span>
-            </div>*@
+    @for (int j = 0, i = 0; i < Model.Count; i++)
+    {
+        if (j % 4 == 0)
+        {
+            @:<div class="row">
+        }
+        if (Model[i].ProductType == ProductType.Internal)
+        {
+            j++;
+            @:<div class="col-sm-3 ">
+            @await Component.InvokeAsync("Product", Model[i]);
+            @:</div>
+        }
+        
+        if (j % 4 == 0)
+        {
+            @:</div>
+        }
+    }
+   
 
-        </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/iranOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/iranOil.png" />
-                </a>
-                <br/>
-                <span>نفت ایرانول</span>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/parsOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/parsOil.png" />
-                </a>
-                <br/>
-                <span>نفت پارس</span>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/sepahanOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/sepahanOil.png" />
-                </a>
-                <br/>
-                <span>نفت سپاهان</span>
-            </div>
-        </div>
-    </div>
+
+
+        
+       
 
     <div class="row text-right">
         <div class="col-sm-12">
             <h1>محصولات شرکت های خارجی</h1>
         </div>
     </div>
-    <div class="row text-center">
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/shellOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/shellOil.png" />
-                </a>
-                <br />
-                <span>شل</span>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/mobilOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/mobilOil.png" />
-                </a>
-                <br/>
-                <span>موبیل</span>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/castrolOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/castrolOil.png" />
-                </a>
-                <br/>
-                <span>کاسترول</span>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/totalOil.pdf" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/totalOil.png" />
-                </a>
-                <br/>
-                <span>توتال</span>
-            </div>
-        </div>
-    </div>
-    <br />
-    <div class="row text-center">
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/fuchsOil.png" />
-                </a>
-                <br/>
-                <span>فوچز</span>
-            </div>
-            </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/elfOil.png" />
-                </a>
-                <br/>
-                <span>الف</span>
-            </div>
-            </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/liquiMolyOil.png" />
-                </a>
-                <br/>
-                <span>لیکی مولی</span>
-            </div>
-            </div>
-        <div class="col-sm-3">
-            <div class="row productComponent">
-                <a href="~/Resources/Pdf/Products/Oil/" target="_blank">
-                    <img src="~/Resources/Images/Products/Oil/bpOil.png" />
-                </a>
-                <br/>
-                <span>بی پی</span>
-            </div>
-            </div>
-    </div>
+    @for (int j = 0, i = 0; i < Model.Count; i++)
+    {
+        if (j % 4 == 0)
+        {
+            @:<div class="row">
+        }
+        if (Model[i].ProductType == ProductType.External)
+        {
+            j++;
+            @:<div class="col-sm-3 ">
+            @await Component.InvokeAsync("Product", Model[i]);
+            @:</div>
+        }
+        
+        if (j % 4 == 0)
+        {
+            @:</div>
+        }
+    }
+    
 }
 
 @section Footer
