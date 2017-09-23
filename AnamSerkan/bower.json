@@ -3,7 +3,6 @@
   "private": true,
   "dependencies": {
     "bootstrap": "v3.3.7",
-    "jQuery": "3.2.1",
-    "bxslider-4": "bxSlider#v4.2.12"
+    "jQuery": "3.2.1"
   }
 }
