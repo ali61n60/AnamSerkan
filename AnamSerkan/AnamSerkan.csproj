@@ -43,6 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\css\fonts\" />
     <Folder Include="wwwroot\css\sass\helpers\" />
     <Folder Include="wwwroot\css\sass\base\" />
     <Folder Include="wwwroot\Resources\Images\FirstPage\" />
