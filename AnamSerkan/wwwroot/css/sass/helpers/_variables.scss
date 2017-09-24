@@ -1,4 +1,9 @@
 ﻿/*_variables.scss*/
+/*Sizes*/
+$size-xs: 576px;
+$size-sm: 768px;
+$size-md: 992px;
+$size-lg:1200px;
 /*Colors*/
 $defaultColor:#333;
 $defaultBackgroundColor:#fff;
@@ -53,6 +58,22 @@ $purple-accent-2: #e040fb;
 $purple-accent-3:#d500f9;
 $purple-accent-4:#aa00ff;
 
+$green-lighten-5: #e8f5e9 ;
+$green-lighten-4: #c8e6c9;
+$green-lighten-3: #a5d6a7;
+$green-lighten-2: #81c784;
+$green-lighten-1: #66bb6a;
+$green: #4caf50 ;
+$green-darken-1: #43a047;
+$green-darken-2: #388e3c;
+$green-darken-3: #2e7d32;
+$green-darken-4: #1b5e20 ;
+$green-accent-1: #b9f6ca;
+$green-accent-2: #69f0ae ;
+$green-accent-3: #00e676;
+$green-accent-4: #00c853;
+
+
 $logo_color : #083B91;
 
 /* corporate color palette */
@@ -62,7 +83,10 @@ $primary-mid: #DC664A;
 $secondary-dark: #5A3928;
 $secondary-light: #FDC149;
 /* functional variables */
-
+$text-color-white:#fff;
+$text-color-light:#333;
+$text-color-dark:#aaa;
+$text-color-black:#000;
 $text-color: $primary-dark;
 $border-light: $secondary-light;
 $border-dark: $primary-dark;

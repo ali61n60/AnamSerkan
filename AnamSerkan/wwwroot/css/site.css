@@ -1,5 +1,6 @@
 /*sass --watch site.scss:../site.css*/
 /*_variables.scss*/
+/*Sizes*/
 /*Colors*/
 /* corporate color palette */
 /* functional variables */
@@ -242,18 +243,19 @@ th {
 
 /*currentProject.scss*/
 /*_variables.scss*/
+/*Sizes*/
 /*Colors*/
 /* corporate color palette */
 /* functional variables */
 /*Fonts*/
 .top-top {
   background-color: #4a148c;
-  color: #bbb;
+  color: #fff;
   padding: 7px 0 7px 0;
-  font-size: 20px; }
-  @media screen and (max-width: 767px) {
+  font-size: 12px; }
+  @media screen and (min-width: 768px) {
     .top-top {
-      font-size: 12px; } }
+      font-size: 20px; } }
 
 .navbar {
   margin-bottom: 0;
@@ -263,18 +265,30 @@ th {
   color: #fff;
   font-size: 20px; }
 
+.page-title {
+  background-color: #ea80fc;
+  color: #000;
+  height: 100px;
+  margin: 5px 0 5px 0; }
+
+.top-header img {
+  width: 80%;
+  margin: 0 auto;
+  height: 150px; }
+  @media screen and (min-width: 768px) {
+    .top-header img {
+      height: 300px; } }
+
 .sidenav {
   padding-top: 20px;
-  background-color: #e040fb; }
+  font-size: 20px;
+  background-color: #e8f5e9;
+  color: #4a148c; }
 
 footer {
   background-color: #ba68c8;
-  color: white;
+  color: #fff;
   padding: 15px; }
-
-.page-title {
-  background-color: #d8bfd8;
-  height: 100px; }
 
 .productComponent {
   margin: 5px;
@@ -285,11 +299,6 @@ footer {
   .productComponent img {
     width: 90px;
     height: 90px; }
-
-.top-header-img {
-  width: 200px;
-  height: auto;
-  margin: 0 auto; }
 
 .text-size-lg {
   font-size: 22px; }
