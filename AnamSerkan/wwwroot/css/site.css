@@ -280,15 +280,34 @@ th {
       height: 300px; } }
 
 .sidenav {
-  padding-top: 20px;
+  padding: 20px;
   font-size: 20px;
-  background-color: #e8f5e9;
+  background-color: #b39ddb;
   color: #4a148c; }
+  .sidenav ul li {
+    list-style-type: none;
+    text-align: right; }
+    .sidenav ul li a {
+      color: #fff; }
+
+.main {
+  background-color: #d1c4e9;
+  padding: 10px; }
 
 footer {
-  background-color: #ba68c8;
+  background-color: #311b92;
   color: #fff;
   padding: 15px; }
+
+.equivalent .panel {
+  border-color: #4527a0; }
+  .equivalent .panel .panel-heading {
+    background-color: #4527a0;
+    color: #fff; }
+  .equivalent .panel .panel-body {
+    background-color: #d1c4e9; }
+    .equivalent .panel .panel-body a {
+      font-size: 20px; }
 
 .productComponent {
   margin: 5px;
