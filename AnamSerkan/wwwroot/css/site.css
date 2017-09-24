@@ -280,8 +280,8 @@ th {
       height: 300px; } }
 
 .sidenav {
-  padding: 20px;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 16px;
   background-color: #b39ddb;
   color: #4a148c; }
   .sidenav ul li {
