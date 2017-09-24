@@ -19,7 +19,7 @@
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -246,30 +246,29 @@ th {
 /* corporate color palette */
 /* functional variables */
 /*Fonts*/
-.top-header {
-  background-color: #06888A;
+.top-top {
+  background-color: #4a148c;
   color: #bbb;
   padding: 7px 0 7px 0;
   font-size: 20px; }
+  @media screen and (max-width: 767px) {
+    .top-top {
+      font-size: 12px; } }
 
-@media screen and (max-width: 767px) {
-  .top-header {
-    font-size: 12px; } }
 .navbar {
   margin-bottom: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  background-color: #8a2be2; }
+  background-color: #6a1b9a; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: greenyellow; }
+  color: #fff;
+  font-size: 20px; }
 
 .sidenav {
   padding-top: 20px;
-  background-color: #d8bfd8; }
+  background-color: #e040fb; }
 
 footer {
-  background-color: #9370db;
+  background-color: #ba68c8;
   color: white;
   padding: 15px; }
 
@@ -280,7 +279,7 @@ footer {
 .productComponent {
   margin: 5px;
   padding: 5px;
-  border: solid 1px #8a2be2;
+  border: solid 1px #aa00ff;
   height: 150px;
   text-align: center; }
   .productComponent img {

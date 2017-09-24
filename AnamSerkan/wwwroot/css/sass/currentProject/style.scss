@@ -1,28 +1,28 @@
 ﻿/*currentProject.scss*/
 @import '../helpers/_variables.scss';
 
-.top-header {
-    background-color: $topHeadlineBackgroundColor;
+.top-top {
+    background-color: $purple-darken-4;
     color: #bbb;
     padding: 7px 0 7px 0;
     font-size: 20px;
-}
 
-@media screen and (max-width: 767px) {
-    .top-header {
+    @media screen and (max-width: 767px) {
         font-size: 12px;
     }
 }
 
+
+
 .navbar {
     margin-bottom: 0;
-    -ms-border-radius: 0;
-    border-radius: 0;
-    background-color: $headlineBackgroundColor;
+   
+    background-color: $purple-darken-3;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: greenyellow;
+   color:#fff;
+   font-size:20px;
 }
 
 
@@ -32,14 +32,14 @@
 
 .sidenav {
     padding-top: 20px;
-    background-color: $sidebarBackgroundColor;
+    background-color: $purple-accent-2;
 }
 
 .main {
 }
 
 footer {
-    background-color: $footerBackgroundColor;
+    background-color: $purple-lighten-2;
     color: white;
     padding: 15px;
 }
@@ -54,21 +54,22 @@ footer {
 .productComponent {
     margin: 5px;
     padding: 5px;
-    border: solid 1px $darkPurple;
+    border: solid 1px $purple-accent-4;
     height: 150px;
-    text-align:center;
+    text-align: center;
+
     img {
-        width: 90px;    
-        height:90px
+        width: 90px;
+        height: 90px
     }
 }
 
-.top-header-img{
-    width:200px;
-    height:auto;
-    margin:0 auto;
+.top-header-img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
 }
 
-.text-size-lg{
-    font-size:22px;    
+.text-size-lg {
+    font-size: 22px;
 }
