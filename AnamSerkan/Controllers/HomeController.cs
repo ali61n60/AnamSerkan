@@ -19,12 +19,17 @@ namespace AnamSerkan.Controllers
         [HttpGet]
         public IActionResult Contact()
         {
+            //TODO create Random String
+            ViewData["SecurityCode"] = "1234";
             return View();
         }
         [HttpPost]
-        public IActionResult Contact(Message message)
+        public IActionResult Contact(Message message, string originalSecurityCode)
         {
-
+            if (originalSecurityCode != message.SecurityCode)
+            {
+                return Contact();
+            }
             return View();
         }
         public IActionResult About()

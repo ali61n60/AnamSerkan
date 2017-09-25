@@ -281,7 +281,7 @@ body {
   margin: 5px 0 5px 0; }
 
 .top-header img {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   height: 150px; }
   @media screen and (min-width: 768px) {
@@ -292,6 +292,7 @@ body {
   padding: 5px;
   font-size: 20px;
   margin-left: -15px;
+  margin-right: -15px;
   background-color: #b39ddb;
   color: #4a148c; }
   .sidenav ul li {
@@ -328,6 +329,10 @@ footer {
   .productComponent img {
     width: 90px;
     height: 90px; }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      .productComponent img {
+        width: 70px;
+        height: 70px; } }
 
 .text-size-lg {
   font-size: 22px; }
