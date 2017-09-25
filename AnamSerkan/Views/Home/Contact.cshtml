@@ -1,4 +1,4 @@
-﻿@model object
+﻿@model Message
 
 @{
     ViewData["Title"] = "تماس با ما";
@@ -24,19 +24,69 @@
 
 @section Body
 {
-    <div class="row main">
-        <div class="text-right">
-            <h3>آدرس</h3>
-            <span class="text-size-lg">
-                تهران، فلکه دوم صادقیه، بلوار اشرفی اصفهانی، نرسیده به بلوار مرزداران، برج نگین رضا    
-            </span>
-            
-            <br />
-            <h3>تلفن</h3>
-            <span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;021-44034117
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;021-44034116
+    <div class="main">
+        <form asp-controller="Home" asp-action="Index" method="post">
+            <div>
+                <div class="row form-group">
+                    <div class="col-sm-2">
+                        <label asp-for="Name">نام</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input asp-for="Name" class="form-control" placeholder="نام" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-2">
+                        <label asp-for="PhoneNumber">تلفن همراه</label>
+                    </div>
+                    <div class="col-sm-10">
+                        <input asp-for="PhoneNumber" class="form-control" placeholder="09121234567"/>
+                    </div>
+                </div>
+                <p>
+                    <label asp-for="Name">نام</label>
+                    <input asp-for="Name"/>
+                </p>
+                <p>
+                    <label asp-for="Email">ایمیل</label>
+                    <input asp-for="Email"/>
+                </p>
+                <p>
+                    <label asp-for="Title">موضوع</label>
+                    <input asp-for="Title"/>
+                </p>
+                <p>
+                <p>
+                    <label asp-for="Title">موضوع</label>
+                    <input asp-for="Title"/>
+                </p>
+                <p>
+
+                </p>
+                <button type="submit">Submit RSVP</button>
+
+
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-right">
+                    <h3>آدرس</h3>
+                    <span class="text-size-lg">
+                        تهران، فلکه دوم صادقیه، بلوار اشرفی اصفهانی، نرسیده به بلوار مرزداران، برج نگین رضا
+                    </span>
+
+                    <br />
+                    <h3>تلفن</h3>
+                    <span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;021-44034117
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;021-44034116
+                </div>
+            </div>
         </div>
+
+
+
     </div>
 
 }

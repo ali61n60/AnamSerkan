@@ -16,8 +16,15 @@ namespace AnamSerkan.Controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult Contact()
         {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Contact(Message message)
+        {
+
             return View();
         }
         public IActionResult About()
