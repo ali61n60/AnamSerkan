@@ -1,0 +1,44 @@
+﻿@model object
+
+@{
+    ViewData["Title"] = "خانه";
+    ViewData["PageTitle"] = "خانه";
+    Layout = "_Layout";
+}
+
+@section TopTop
+{
+    @Html.Partial("TopTop");
+}
+@section NavBar
+{
+    @Html.Partial("NavBar")
+}
+@section PageTitle
+{
+    @Html.Partial("PageTitle")
+}
+@section TopHeader
+{
+
+}
+@section SideNav
+{
+    @Html.Partial("SideNav")
+}
+@section Body
+{
+    <div class="text-center">
+        <p>پیام شما دریافت شد. با تشکر</p>
+    </div>
+    
+}
+
+@section Footer
+{
+    @Html.Partial("Footer")
+}
+
+@section scripts{
+
+}

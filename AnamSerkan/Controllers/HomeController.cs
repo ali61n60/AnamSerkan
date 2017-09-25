@@ -19,8 +19,7 @@ namespace AnamSerkan.Controllers
         [HttpGet]
         public IActionResult Contact()
         {
-            //TODO create Random String
-            ViewData["SecurityCode"] = "1234";
+            ViewData["SecurityCode"] = new Random().Next(1000,9999).ToString();
             return View();
         }
         [HttpPost]
@@ -30,7 +29,10 @@ namespace AnamSerkan.Controllers
             {
                 return Contact();
             }
-            return View();
+            //TODOD take the message and save it in database
+           MessageRepository messageRepository=new MessageRepository();
+            messageRepository.SaveMessage(message);
+            return View("MessageReceived");
         }
         public IActionResult About()
         {
