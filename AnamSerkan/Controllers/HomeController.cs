@@ -16,9 +16,23 @@ namespace AnamSerkan.Controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult Contact()
         {
+            ViewData["SecurityCode"] = new Random().Next(1000,9999).ToString();
             return View();
+        }
+        [HttpPost]
+        public IActionResult Contact(Message message, string originalSecurityCode)
+        {
+            if (originalSecurityCode != message.SecurityCode)
+            {
+                return Contact();
+            }
+            //TODOD take the message and save it in database
+           MessageRepository messageRepository=new MessageRepository();
+            messageRepository.SaveMessage(message);
+            return View("MessageReceived");
         }
         public IActionResult About()
         {
