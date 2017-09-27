@@ -34,7 +34,7 @@ namespace AnamSerkan.Controllers
             MessageRepository messageRepository = new MessageRepository();
             messageRepository.SaveMessage(message);
             Email email=new Email();
-            email.SendEmail("ali62n62@yahoo.com", message);
+            email.SendEmail("info@anamserkan.ir", message);
 
             return View("MessageReceived");
         }
