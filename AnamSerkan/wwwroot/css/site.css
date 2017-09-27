@@ -304,6 +304,8 @@ body {
 .main {
   background-color: #d1c4e9;
   padding: 10px; }
+  .main .label-title {
+    padding-top: 7px; }
 
 footer {
   background-color: #311b92;

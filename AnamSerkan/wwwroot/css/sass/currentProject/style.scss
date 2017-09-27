@@ -72,8 +72,11 @@ body{
 }
 
 .main {
-    background-color:$color-deep-purple-lighten-4;
-    padding:10px;
+    background-color: $color-deep-purple-lighten-4;
+    padding: 10px;
+    .label-title{
+        padding-top:7px;
+    }
 }
 
 footer {
