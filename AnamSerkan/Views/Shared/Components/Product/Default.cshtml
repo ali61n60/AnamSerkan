@@ -1,9 +1,17 @@
 ﻿@model Product
 
 <div class="row productComponent">
-    <a href="@Model.ProductDetailUrl" target="_blank">
+    @if (Model.ProductDetailUrl != "#")
+    {
+        <a href="@Model.ProductDetailUrl" target="_blank">
+            <img src="@Model.ImagePath"/>
+        </a>
+        <br/>
+    }
+    else
+    {
         <img src="@Model.ImagePath"/>
-    </a>
-    <br/>
+        <br/>
+    }
     <span>@Model.ProductName</span>
 </div>
