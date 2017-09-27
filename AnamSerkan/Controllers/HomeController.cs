@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AnamSerkan.Infrastructure;
 using AnamSerkan.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,7 +12,7 @@ namespace AnamSerkan.Controllers
 {
     public class HomeController : Controller
     {
-        
+
         public IActionResult Index()
         {
             return View();
@@ -19,7 +20,7 @@ namespace AnamSerkan.Controllers
         [HttpGet]
         public IActionResult Contact()
         {
-            ViewData["SecurityCode"] = new Random().Next(1000,9999).ToString();
+            ViewData["SecurityCode"] = new Random().Next(1000, 9999).ToString();
             return View();
         }
         [HttpPost]
@@ -30,8 +31,11 @@ namespace AnamSerkan.Controllers
                 return Contact();
             }
             //TODOD take the message and save it in database
-           MessageRepository messageRepository=new MessageRepository();
+            MessageRepository messageRepository = new MessageRepository();
             messageRepository.SaveMessage(message);
+            Email email=new Email();
+            email.SendEmail("ali62n62@yahoo.com", "anamserkan test", message.MessageDetail+" "+message.PhoneNumber);
+
             return View("MessageReceived");
         }
         public IActionResult About()
@@ -48,6 +52,6 @@ namespace AnamSerkan.Controllers
             return View();
         }
 
-        
+
     }
 }
