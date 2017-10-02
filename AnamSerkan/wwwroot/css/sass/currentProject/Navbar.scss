@@ -1,0 +1,9 @@
+﻿.navbar {
+    margin-bottom: 0;
+    background-color: $color-purple-darken-3;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: $text-color-white;
+    font-size: 20px;
+}

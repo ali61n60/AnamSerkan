@@ -27,21 +27,21 @@
     <title>@ViewData["Title"]</title>
 </head>
 <body>
-    <div class="row">
+    <div>
         @RenderSection("TopTop", required: false)
     </div>
-    <div class="row">
+    <div>
         @RenderSection("NavBar", required: false)
     </div>
 
 
-<div class="container">
-    <div class="row">
+<div class="container mainContainer">
+    
         @RenderSection("PageTitle", required: false)    
-    </div>
-    <div class="row">
+    
+    
         @RenderSection("TopHeader", required: false)    
-    </div>
+    
     <div class="row middle">
         <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
             @RenderSection("SideNav", required: false)
