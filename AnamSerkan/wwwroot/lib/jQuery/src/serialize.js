@@ -128,13 +128,3 @@ jQuery.fn.extend( {
 
 return jQuery;
 } );
- );
-			}
-
-			return { name: elem.name, value: val.replace( rCRLF, "\r\n" ) };
-		} ).get();
-	}
-} );
-
-return jQuery;
-} );
