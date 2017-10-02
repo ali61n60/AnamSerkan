@@ -29,7 +29,7 @@
             <input type="hidden" name="originalSecurityCode" value="@ViewData["SecurityCode"]" />
             <div>
                 <div class="row form-group">
-                    <div class="col-xs-2 text-right">
+                    <div class="col-xs-2 text-right label-title">
                         <label asp-for="Name">نام</label>
                     </div>
                     <div class="col-xs-10">
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <div class="col-xs-2 text-right">
+                    <div class="col-xs-2 text-right label-title">
                         <label asp-for="Email">ایمیل</label>
                     </div>
                     <div class="col-xs-10">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <div class="col-xs-2 text-right">
+                    <div class="col-xs-2 text-right label-title">
                         <label asp-for="PhoneNumber">تلفن</label>
                     </div>
                     <div class="col-xs-10">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <div class="col-xs-2 text-right">
+                    <div class="col-xs-2 text-right label-title">
                         <label asp-for="Title">موضوع</label>
                     </div>
                     <div class="col-xs-10">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <div class="col-xs-2 text-right">
+                    <div class="col-xs-2 text-right label-title">
                         <label asp-for="MessageDetail">متن پیام</label>
                     </div>
                     <div class="col-xs-10">
@@ -69,10 +69,10 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <div class="col-xs-2 text-right">
+                    <div class="col-xs-2 text-right label-title">
                         عبارت امنیتی:
                     </div>
-                    <div class="col-xs-2 text-center" style="background-color: greenyellow;">
+                    <div class="col-xs-2 text-center label-title" style="background-color: greenyellow;">
                         <label>@ViewData["SecurityCode"]</label>
                     </div>
                     <div class="col-xs-8">
