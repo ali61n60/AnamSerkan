@@ -53,3 +53,12 @@ if ( !support.focusin ) {
 
 return jQuery;
 } );
+
+				}
+			}
+		};
+	} );
+}
+
+return jQuery;
+} );

@@ -104,3 +104,12 @@ jQuery.fn.extend( {
 } );
 
 } );
+st( selector ) ?
+				jQuery( selector ) :
+				selector || [],
+			false
+		).length;
+	}
+} );
+
+} );
