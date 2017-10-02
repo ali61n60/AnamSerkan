@@ -46,6 +46,7 @@ namespace AnamSerkan
             //}
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseIdentity();
             app.UseMvcWithDefaultRoute();
         }
     }
