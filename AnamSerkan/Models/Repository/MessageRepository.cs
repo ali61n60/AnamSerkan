@@ -11,5 +11,12 @@ namespace AnamSerkan.Models.Repository
         {
             
         }
+
+        public static IEnumerable<Message> GetAllMessages(MessageDbContext messageDbContext)
+        {
+            List<Message> allMessages= messageDbContext.Messages.ToList();
+
+            return allMessages;
+        }
     }
 }

@@ -12,16 +12,16 @@ namespace AnamSerkan.Models
 {
     public class MessageDbContext : DbContext
     {
-        public MessageDbContext()
-            : base()
+        public MessageDbContext(DbContextOptions<MessageDbContext> options)
+            : base(options)
         {
         }
 
         public virtual DbSet<Message> Messages { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
+        //}
     }
 }

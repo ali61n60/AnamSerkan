@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Message>
+
+@{
+    ViewData["Title"] = "پیام ها";
+    ViewData["PageTitle"] = "پیام ها";
+    Layout = "_Layout";
+}
+
+@section TopTop
+{
+    @Html.Partial("TopTop")
+}
+@section NavBar
+{
+    @Html.Partial("NavBar")
+}
+@section PageTitle
+{
+    @Html.Partial("PageTitle")
+}
+@section TopHeader
+{
+
+}
+@section SideNav
+{
+    @Html.Partial("SideNav")
+}
+@section Body
+{
+    @foreach (Message message in Model)
+    {
+        <p>name: @message.Name , email:@message.Email, phone:@message.PhoneNumber</p>
+    }
+}
+
+@section Footer
+{
+    @Html.Partial("Footer")
+}
+
+@section scripts{
+
+}

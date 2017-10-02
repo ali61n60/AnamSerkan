@@ -31,8 +31,12 @@ namespace AnamSerkan
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppIdentityDbContext>(options =>
-                options.UseSqlServer(
-                    _configuration["Data:ConnectionString"]));
+                options.UseSqlServer(_configuration["Data:ConnectionString"]));
+
+            services.AddDbContext<MessageDbContext>(options =>
+                options.UseSqlServer(_configuration["Data:ConnectionString"]));
+            
+
             services.AddIdentity<AppUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppIdentityDbContext>();
             services.AddMvc();

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AnamSerkan.Infrastructure;
 using AnamSerkan.Models;
 using AnamSerkan.Models.Repository;
@@ -10,6 +11,11 @@ namespace AnamSerkan.Controllers
 {
     public class HomeController : Controller
     {
+        private MessageDbContext _messageDbContext;
+        public HomeController(MessageDbContext messageDbContext)
+        {
+            _messageDbContext = messageDbContext;
+        }
 
         public IActionResult Index()
         {
@@ -50,6 +56,10 @@ namespace AnamSerkan.Controllers
             return View();
         }
 
-
+        public IActionResult ShowMessages()
+        {
+            IEnumerable<Message> allMessages = MessageRepository.GetAllMessages(_messageDbContext);
+            return View(allMessages);
+        }
     }
 }

@@ -4,30 +4,38 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-[Table("anamserk_ali.Messages")]
+[Table("Messages")]
 public partial class Message
 {
     public int id { get; set; }
 
-    [Required]
-    [StringLength(50)]
-    public string name { get; set; }
-
-    [Required]
-    [StringLength(250)]
-    public string email { get; set; }
+    [NotMapped]
+    public string SecurityCode { get; set; }
 
     [Required]
     [StringLength(50)]
-    public string phone { get; set; }
+    [Column("name")]
+    public string Name { get; set; }
 
     [Required]
     [StringLength(250)]
-    public string title { get; set; }
+    [Column("email")]
+    public string Email { get; set; }
+
+    [Required]
+    [StringLength(50)]
+    [Column("phone")]
+    public string PhoneNumber { get; set; }
+
+    [Required]
+    [StringLength(250)]
+    [Column("title")]
+    public string Title { get; set; }
 
     [Required]
     [StringLength(2500)]
-    public string detail { get; set; }
+    [Column("detail")]
+    public string MessageDetail { get; set; }
 }
 
 //using System;
