@@ -21,38 +21,23 @@ body {
 
 @import 'TopTop.scss';
 @import 'Navbar.scss';
+@import 'PageTitle.scss';
+@import 'TopHeader.scss';
+@import 'SideNav.scss';
 
 
 
-.page-title {
-    background-color: $color-purple-darken-2;
-    color: $text-color-black;
-    height: 100px;    
-}
-
-.top-header {
-    img {
-        width: 100%;
-        margin: 0 auto;
-        height: 150px;
-        @media screen and (min-width: $size-sm) {
-            height: 300px;
-        }
-    }
-}
-.sidenav {
-    padding: 5px;
-    font-size: 20px;
-    
-    color: $color-purple-darken-4;
-
-    ul li {
-        list-style-type: none;
-        text-align: right;
-
-        a {
-            color: $text-color-white;
-        }
+.middle{
+    position:relative;
+    min-height:400px;
+    .logo-image{
+        position:absolute;
+        top:50px;
+        left:50px;
+        opacity:0.1;
+        width:300px;
+        height:300px;
+        
     }
 }
 
@@ -63,47 +48,9 @@ body {
     }
 }
 
-footer {
-    background-color: $color-deep-purple-darken-4;
-    color: $text-color-white;
-    padding: 15px;
-}
-
-
-.equivalent {
-    .panel {
-        border-color: $color-deep-purple-darken-3;
-
-        .panel-heading {
-            background-color: $color-deep-purple-darken-2;
-            color: $text-color-white;
-        }
-        .panel-body{
-            background-color:$color-deep-purple-lighten-4;
-            a{
-                font-size:20px;
-            }
-        }
-    }
-}
-
-.productComponent {
-    margin: 5px;
-    padding: 5px;
-    border: solid 1px $color-purple-accent-4;
-    height: 150px;
-    text-align: center;
-
-    img {
-        width: 90px;
-        height: 90px; 
-        @media screen and (min-width: $size-sm) and (max-width:$size-md - 1) {
-            width:70px;
-            height:70px;
-        }
-    }
-}
-
+@import 'Footer.scss';
+@import 'ViewEquivalent.scss';
+@import 'ViewProduct.scss';
 
 
 .text-size-lg {

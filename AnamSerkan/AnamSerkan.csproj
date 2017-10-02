@@ -10,9 +10,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\css\sass\currentProject\Footer.scss" />
     <Content Include="wwwroot\css\sass\currentProject\Navbar.scss" />
+    <Content Include="wwwroot\css\sass\currentProject\PageTitle.scss" />
+    <Content Include="wwwroot\css\sass\currentProject\SideNav.scss" />
     <Content Include="wwwroot\css\sass\currentProject\style.scss" />
+    <Content Include="wwwroot\css\sass\currentProject\TopHeader.scss" />
     <Content Include="wwwroot\css\sass\currentProject\TopTop.scss" />
+    <Content Include="wwwroot\css\sass\currentProject\ViewEquivalent.scss" />
+    <Content Include="wwwroot\css\sass\currentProject\ViewProduct.scss" />
     <Content Include="wwwroot\css\sass\site.css" />
     <Content Include="wwwroot\css\sass\site.min.css" />
     <Content Include="wwwroot\css\sass\site.scss" />
