@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace AnamSerkan.Controllers
 {
+    [Authorize(Roles = "Admins")]
     public class AccountController:Controller
     {
         private UserManager<AppUser> userManager;

@@ -68,13 +68,13 @@ namespace AnamSerkan.Controllers
             return View();
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admins")]
         public IActionResult ShowMessages()
         {
             IEnumerable<Message> allMessages = MessageRepository.GetAllMessages(_messageDbContext);
             return View(allMessages);
         }
-
+        [Authorize(Roles = "Admins")]
         public IActionResult DeleteMessage(int messageId)
         {
             //remove the message
