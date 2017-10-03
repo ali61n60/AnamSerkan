@@ -1,0 +1,49 @@
+﻿@model Message
+
+
+    <div class="well @Model.DetailsClass">
+   
+
+    <div class="row">
+        <div class="col-sm-2 text-right">
+            نام
+        </div>
+        <div class="col-sm-4">
+            @Model.Name
+        </div>
+        <div class="col-sm-2 text-right">
+            ایمیل
+        </div>
+        <div class="col-sm-4">
+            @Model.Email
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-sm-2 text-right">
+                تلفن
+            </div>
+            <div class="col-sm-4">
+                @Model.PhoneNumber
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 text-right">
+                موضوع
+            </div>
+            <div class="col-sm-4">
+                @Model.Title
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                @Model.MessageDetail
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <a asp-controller="Home" asp-action="DeleteMessage"
+                   asp-route-messageId="@Model.id" class="btn btn-lg btn-danger delete-href">حذف پیام</a>    
+            </div>
+        </div>
+        
+</div>

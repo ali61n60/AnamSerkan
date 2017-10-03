@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AnamSerkan.Infrastructure;
 using AnamSerkan.Models;
 using AnamSerkan.Models.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -39,6 +41,16 @@ namespace AnamSerkan.Controllers
             messageRepository.SaveMessage(message);
             Email email=new Email();
             email.SendEmail("info@anamserkan.ir", message);
+            _messageDbContext.Messages.Add(new Message()
+            {
+                Name = message.Name,
+                Email = message.Email,
+                PhoneNumber = message.PhoneNumber,
+                Title = message.Title,
+                MessageDetail = message.MessageDetail
+            });
+
+            _messageDbContext.SaveChanges();
 
             return View("MessageReceived");
         }
@@ -56,10 +68,20 @@ namespace AnamSerkan.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult ShowMessages()
         {
             IEnumerable<Message> allMessages = MessageRepository.GetAllMessages(_messageDbContext);
             return View(allMessages);
+        }
+
+        public IActionResult DeleteMessage(int messageId)
+        {
+            //remove the message
+            Message messageToBeDeleted = _messageDbContext.Messages.FirstOrDefault(message => message.id == messageId);
+            _messageDbContext.Messages.Remove(messageToBeDeleted);
+            _messageDbContext.SaveChanges();
+            return RedirectToAction("ShowMessages");
         }
     }
 }

@@ -27,35 +27,30 @@
     <title>@ViewData["Title"]</title>
 </head>
 <body>
-    <div>
-        @RenderSection("TopTop", required: false)
-    </div>
-    <div>
-        @RenderSection("NavBar", required: false)
-    </div>
+    @RenderSection("TopTop", required: false)
+    @RenderSection("NavBar", required: false)
 
 
-<div class="container mainContainer">
-    
-        @RenderSection("PageTitle", required: false)    
-    
-    
-        @RenderSection("TopHeader", required: false)    
-    
-    <div class="row middle">
-        <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
-            @RenderSection("SideNav", required: false)
-        </div>
-        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-            <img src="/Resources/Images/logo2.png" class="logo-image"/>
-            @RenderSection("Body", required: true)
+
+    <div class="container mainContainer">
+
+        @RenderSection("PageTitle", required: false)
+        @RenderSection("TopHeader", required: false)
+
+        <div class="middle">
+            <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+                @RenderSection("SideNav", required: false)
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 logo-image">
+                <div class="main">
+                    @RenderSection("Body", required: true)
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
-
-
+    
     @RenderSection("Footer", required: false)
-
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -1,0 +1,42 @@
+﻿@model object
+
+@{
+    ViewData["Title"] = "Access Denied";
+    ViewData["PageTitle"] = "Access Denied";
+    Layout = "_Layout";
+}
+
+@section TopTop
+{
+    @Html.Partial("TopTop")
+}
+@section NavBar
+{
+    @Html.Partial("NavBar")
+}
+@section PageTitle
+{
+    @Html.Partial("PageTitle")
+}
+@section TopHeader
+{
+
+}
+@section SideNav
+{
+    @Html.Partial("SideNav")
+}
+@section Body
+{
+    <div class="bg-danger panel-body"><h4>Access Denied</h4></div>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary">OK</a>
+}
+
+@section Footer
+{
+    @Html.Partial("Footer")
+}
+
+@section scripts{
+
+}

@@ -30,15 +30,54 @@
 {
     @foreach (Message message in Model)
     {
-        <p>name: @message.Name , email:@message.Email, phone:@message.PhoneNumber</p>
+        @Html.Partial("MessageSummary", message)
     }
 }
 
 @section Footer
 {
     @Html.Partial("Footer")
+    
+    <div id="dialog" title="حذف پیام">
+        آیا مطمئنید؟ در صورت حذف پیام امکان بازیابی آن وجود ندارد.
+    </div>
+
 }
 
 @section scripts{
+
+    
+<link href="~/js/iquery-ui/jquery-ui.min.css" rel="stylesheet" />
+<script src="~/js/iquery-ui/jquery-ui.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal: true
+            });//end dialog
+
+            $("a.delete-href").click(function (e) {
+                
+                e.preventDefault();
+                var targetUrl = $(this).attr("href");
+
+                $("#dialog").dialog({
+                    buttons : {
+                        "حذف شود" : function() {
+                            window.location.href = targetUrl;
+                        },
+                        "انصراف" : function() {
+                            $(this).dialog("close");
+                        }
+                    }
+                });
+
+                $("#dialog").dialog("open");
+            });//end click
+
+        });
+    </script>
 
 }

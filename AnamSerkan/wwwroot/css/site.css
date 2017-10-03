@@ -20,7 +20,7 @@
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -313,21 +313,22 @@ body {
   color: #4a148c; }
   .sidenav ul li {
     list-style-type: none;
-    text-align: right; }
+    text-align: right;
+    margin: 5px 0 5px 0; }
     .sidenav ul li a {
       color: #fff; }
 
-.middle {
-  position: relative;
-  min-height: 400px; }
-  .middle .logo-image {
-    position: absolute;
-    opacity: 0.1;
-    width: 300px;
-    height: 300px; }
+.middle .logo-image {
+  min-height: 400px;
+  background-image: url("/Resources/Images/logo2.png");
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-position-y: 20px; }
 
 .main {
-  padding: 10px; }
+  margin: 0 -15px 0 -15px;
+  min-height: 400px;
+  background-color: rgba(209, 196, 233, 0.5); }
   .main .label-title {
     padding-top: 7px; }
 
@@ -362,5 +363,18 @@ footer {
 
 .text-size-lg {
   font-size: 22px; }
+
+/*_variables.scss*/
+/*Sizes*/
+/*Colors*/
+/* corporate color palette */
+/* functional variables */
+/*Fonts*/
+.new-message {
+  border: solid 4px #311b92;
+  border-left: solid 10px #f00; }
+
+.seen-message {
+  border: solid 4px #ede7f6; }
 
 /*# sourceMappingURL=site.css.map */
