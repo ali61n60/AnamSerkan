@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AnamSerkan.Infrastructure;
 using AnamSerkan.Models;
 using AnamSerkan.Models.Repository;
@@ -39,6 +40,16 @@ namespace AnamSerkan.Controllers
             messageRepository.SaveMessage(message);
             Email email=new Email();
             email.SendEmail("info@anamserkan.ir", message);
+            _messageDbContext.Messages.Add(new Message()
+            {
+                Name = message.Name,
+                Email = message.Email,
+                PhoneNumber = message.PhoneNumber,
+                Title = message.Title,
+                MessageDetail = message.MessageDetail
+            });
+
+            _messageDbContext.SaveChanges();
 
             return View("MessageReceived");
         }
@@ -60,6 +71,15 @@ namespace AnamSerkan.Controllers
         {
             IEnumerable<Message> allMessages = MessageRepository.GetAllMessages(_messageDbContext);
             return View(allMessages);
+        }
+
+        public IActionResult DeleteMessage(int messageId)
+        {
+            //TODO remove the message
+            //Message messageToBeDeleted= _messageDbContext.Messages.FirstOrDefault(message => message.id == messageId);
+            //_messageDbContext.Messages.Remove(messageToBeDeleted);
+            //_messageDbContext.SaveChanges();
+           return RedirectToAction("ShowMessages");
         }
     }
 }

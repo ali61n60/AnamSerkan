@@ -36,8 +36,10 @@ namespace AnamSerkan.Models
         [Column("detail")]
         public string MessageDetail { get; set; }
 
-        //public MessageStatus MessageStatus { get; set; }
-        
+        public MessageStatus MessageStatus { get; set; }
+
+        [NotMapped]
+        public string DetailsClass => MessageStatus == MessageStatus.New ? "new-message" : "seen-message";
     }
 
     public enum MessageStatus

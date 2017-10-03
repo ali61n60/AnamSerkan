@@ -8,9 +8,10 @@ using AnamSerkan.Models;
 namespace AnamSerkan.Migrations.MessageDb
 {
     [DbContext(typeof(MessageDbContext))]
-    partial class MessageDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171003074915_messageStatus")]
+    partial class messageStatus
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")

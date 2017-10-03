@@ -30,15 +30,62 @@
 {
     @foreach (Message message in Model)
     {
-        <p>name: @message.Name , email:@message.Email, phone:@message.PhoneNumber</p>
+        @Html.Partial("MessageSummary", message)
     }
 }
 
 @section Footer
 {
     @Html.Partial("Footer")
+    <div id="dialog" title="Dialog Title" style="display:none"> Some text</div>
+
 }
 
 @section scripts{
+
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            /**
+            * Create a dialog box for confirming deletes.
+            * This creates the box at domready. The box is opened
+            * by a call to dialog("open") in the delete link.
+            */
+            //$("#delete-dialog").dialog({
+            //    autoOpen   : false,
+            //    bgiframe   : true,
+            //    buttons    : {
+            //        "Yes, I'm sure" : function()
+            //        {
+            //            $(this).dialog("close");
+            //            var href = $(this).dialog("option", "href");
+            //            var row = $(this).dialog("option", "row");
+            //            $.doDelete(href, row);
+            //        },
+            //        "Cancel" : function()
+            //        {
+            //            $(this).dialog("close");
+            //        }
+            //    },
+            //    height     : 150,
+            //    modal      : true,
+            //    overlay    : {
+            //        backgroundColor : "#000000",
+            //        opacity         : 0.75
+            //    },
+            //    resizable : false
+            //});//end dialog
+
+            $("a.delete-href").click(function (e) {
+                
+                e.preventDefault();
+                $("#dialog").dialog({ height: 300 });
+            });//end click
+
+        });
+    </script>
 
 }

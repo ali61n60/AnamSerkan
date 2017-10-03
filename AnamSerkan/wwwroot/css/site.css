@@ -20,7 +20,7 @@
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -362,5 +362,18 @@ footer {
 
 .text-size-lg {
   font-size: 22px; }
+
+/*_variables.scss*/
+/*Sizes*/
+/*Colors*/
+/* corporate color palette */
+/* functional variables */
+/*Fonts*/
+.new-message {
+  border: solid 4px #311b92;
+  border-left: solid 10px #f00; }
+
+.seen-message {
+  border: solid 4px #ede7f6; }
 
 /*# sourceMappingURL=site.css.map */
