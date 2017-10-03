@@ -35,5 +35,14 @@ namespace AnamSerkan.Models
         [StringLength(2500)]
         [Column("detail")]
         public string MessageDetail { get; set; }
+
+        //public MessageStatus MessageStatus { get; set; }
+        
+    }
+
+    public enum MessageStatus
+    {
+        New,
+        Seen
     }
 }
