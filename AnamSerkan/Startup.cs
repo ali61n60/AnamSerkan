@@ -23,8 +23,7 @@ namespace AnamSerkan
         {
             _env = env;
             _configuration = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json").Build();
+                .SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.json").Build();
 
         }
 
@@ -37,8 +36,7 @@ namespace AnamSerkan
                 options.UseSqlServer(_configuration["Data:ConnectionString"]));
             
 
-            services.AddIdentity<AppUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppIdentityDbContext>();
+            services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>();
             services.AddMvc();
         }
 

@@ -52,6 +52,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Account\" />
     <Folder Include="wwwroot\css\fonts\" />
     <Folder Include="wwwroot\css\sass\helpers\" />
     <Folder Include="wwwroot\css\sass\base\" />

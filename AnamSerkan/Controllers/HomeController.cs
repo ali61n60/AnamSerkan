@@ -4,6 +4,7 @@ using System.Linq;
 using AnamSerkan.Infrastructure;
 using AnamSerkan.Models;
 using AnamSerkan.Models.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -67,6 +68,7 @@ namespace AnamSerkan.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult ShowMessages()
         {
             IEnumerable<Message> allMessages = MessageRepository.GetAllMessages(_messageDbContext);
@@ -75,11 +77,11 @@ namespace AnamSerkan.Controllers
 
         public IActionResult DeleteMessage(int messageId)
         {
-            //TODO remove the message
-            //Message messageToBeDeleted= _messageDbContext.Messages.FirstOrDefault(message => message.id == messageId);
-            //_messageDbContext.Messages.Remove(messageToBeDeleted);
-            //_messageDbContext.SaveChanges();
-           return RedirectToAction("ShowMessages");
+            //remove the message
+            Message messageToBeDeleted = _messageDbContext.Messages.FirstOrDefault(message => message.id == messageId);
+            _messageDbContext.Messages.Remove(messageToBeDeleted);
+            _messageDbContext.SaveChanges();
+            return RedirectToAction("ShowMessages");
         }
     }
 }
