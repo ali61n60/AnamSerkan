@@ -1,4 +1,7 @@
-﻿@model IEnumerable<AppUser>
+﻿@using System.Collections.Generic
+@using System.Linq
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model System.Collections.Generic.IEnumerable<AppUser>
 
 
 @{
@@ -17,7 +20,7 @@
 }
 @section PageTitle
 {
-    @Html.Partial("PageTitle")
+    @Html.Partial("PageTitleLoggedIn")
 }
 @section TopHeader
 {

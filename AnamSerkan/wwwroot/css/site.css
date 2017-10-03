@@ -20,7 +20,7 @@
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -298,6 +298,8 @@ body {
   background-color: #7b1fa2;
   color: #000;
   height: 100px; }
+  .page-title a {
+    margin-top: 10px; }
 
 .top-header img {
   width: 100%;
