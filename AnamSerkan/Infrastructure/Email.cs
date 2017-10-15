@@ -33,13 +33,13 @@ namespace AnamSerkan.Infrastructure
 
 
 
-            emailMessage.From.Add(new MailboxAddress("AnamSerkan Server Message", "message@anamserkan.ir"));
+            emailMessage.From.Add(new MailboxAddress("AnamSerkan Server Message", "message@anamserkan.com"));
             emailMessage.To.Add(new MailboxAddress("", emailAddress));
             emailMessage.Subject = message.Title;
 
             using (var client = new SmtpClient())
             {
-                client.Connect("mail.anamserkan.ir", 25);
+                client.Connect("mail.anamserkan.com", 25);
                 // Note: since we don't have an OAuth2 token, disable
                 // the XOAUTH2 authentication mechanism.
                 client.AuthenticationMechanisms.Remove("XOAUTH2");
