@@ -45,7 +45,7 @@ namespace AnamSerkan.Infrastructure
                 client.AuthenticationMechanisms.Remove("XOAUTH2");
 
                 // Note: only needed if the SMTP server requires authentication
-                client.Authenticate("message@anamserkan.ir", "119801");
+                client.Authenticate("message@anamserkan.com", "119801");
 
 
 
