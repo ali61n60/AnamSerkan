@@ -40,7 +40,7 @@ namespace AnamSerkan.Controllers
             MessageRepository messageRepository = new MessageRepository();
             messageRepository.SaveMessage(message);
             Email email=new Email();
-            email.SendEmail("info@anamserkan.ir", message);
+            email.SendEmail("info@anamserkan.com", message);
             _messageDbContext.Messages.Add(new Message()
             {
                 Name = message.Name,
