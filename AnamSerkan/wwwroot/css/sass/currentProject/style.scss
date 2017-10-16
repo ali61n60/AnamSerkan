@@ -12,10 +12,11 @@
 
 body {
     font-family: yekan, Tahoma, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: $color-deep-purple-lighten-5;   
+    background-color: $color-deep-purple-lighten-5;
+    background: linear-gradient(to bottom,$color-purple-lighten-5,$color-purple-darken-4); /* Standard syntax */
 }
 .mainContainer {
-    background-color: $color-deep-purple-lighten-4;
+    /*background-color: $color-deep-purple-lighten-4;*/
     
 }
 
@@ -31,7 +32,7 @@ body {
 
     .logo-image {
         min-height: 400px;
-        background-image: url('/Resources/Images/logo2.png');
+        /*background-image: url('/Resources/Images/logo2.png');*/
         background-repeat: no-repeat;
         background-size: 300px 300px;
         background-position-y:20px;
@@ -41,7 +42,7 @@ body {
 .main {
     margin:0 -15px 0 -15px;
     min-height:400px;
-    background-color:rgba(209,196,233,0.5);
+    /*background-color:rgba(209,196,233,0.5);*/
     
        
     

@@ -20,7 +20,7 @@
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -256,14 +256,16 @@ th {
   font-style: normal; }
 body {
   font-family: yekan, Tahoma, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #ede7f6; }
+  background-color: #ede7f6;
+  background: linear-gradient(to bottom, #f3e5f5, #4a148c);
+  /* Standard syntax */ }
 
 .mainContainer {
-  background-color: #d1c4e9; }
+  /*background-color: $color-deep-purple-lighten-4;*/ }
 
 .top-top {
-  background-color: #4a148c;
-  color: #fff;
+  /*background-color: $color-purple-darken-4;*/
+  color: #000;
   padding: 7px 0 7px 0;
   font-size: 12px; }
   @media screen and (min-width: 768px) {
@@ -279,7 +281,8 @@ body {
 /*Fonts*/
 .navbar {
   margin-bottom: 0;
-  background-color: #6a1b9a; }
+  background-color: #b39ddb;
+  border: 0px; }
   .navbar .logo {
     width: 150px;
     height: 80px;
@@ -295,7 +298,7 @@ body {
   font-size: 20px; }
 
 .page-title {
-  background-color: #7b1fa2;
+  /*background-color: $color-purple-darken-2;*/
   color: #000;
   height: 100px; }
   .page-title a {
@@ -312,7 +315,7 @@ body {
 .sidenav {
   padding: 5px;
   font-size: 20px;
-  color: #4a148c; }
+  /*color: $color-purple-darken-4;*/ }
   .sidenav ul li {
     list-style-type: none;
     text-align: right;
@@ -322,7 +325,7 @@ body {
 
 .middle .logo-image {
   min-height: 400px;
-  background-image: url("/Resources/Images/logo2.png");
+  /*background-image: url('/Resources/Images/logo2.png');*/
   background-repeat: no-repeat;
   background-size: 300px 300px;
   background-position-y: 20px; }
@@ -330,12 +333,12 @@ body {
 .main {
   margin: 0 -15px 0 -15px;
   min-height: 400px;
-  background-color: rgba(209, 196, 233, 0.5); }
+  /*background-color:rgba(209,196,233,0.5);*/ }
   .main .label-title {
     padding-top: 7px; }
 
 footer {
-  background-color: #311b92;
+  /*background-color: $color-deep-purple-darken-4;*/
   color: #fff;
   padding: 15px; }
 
